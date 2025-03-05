@@ -131,6 +131,7 @@
     align-self: center;
     text-decoration: none;
     font-size: 24px;
+    border: none;
     border-bottom: 3px solid #9d4384;
     transition: .5s;
 }
@@ -161,7 +162,12 @@
     position: relative;
     z-index: 100;
     background: #9d4384;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .game-container .seperator-container span { 
     color: lightgray;
     font-size: 20px;
