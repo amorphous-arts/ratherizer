@@ -95,20 +95,27 @@ body {
     color: #e0dbd2;
     transition: .5s
 }
+.context-token-container {
+    display: flex;
+    max-width: 120px;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    margin: auto 0;
+}
 .context-token {
     border: 1px solid #e0dbd2;
     background: black;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
     color: white;
-    margin: auto 0;
 }
 .context-token span {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .base-card .card-item.content {
