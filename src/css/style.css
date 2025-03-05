@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
 
-body {
+.game-container h3, .game-container h2, .game-container h1, .game-container span, .game-container p {
     font-family: "Artifika", serif;
 }
 .game-container {
@@ -39,6 +39,9 @@ body {
 }
 .base-card .card-item {
     border-color: black;
+}
+.content.card-item p {
+    font-size: 16px;
 }
 .card:hover {
     border-color: #9d4384;

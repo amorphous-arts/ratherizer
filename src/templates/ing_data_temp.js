@@ -4,7 +4,7 @@ const ingDataTemp = (ing, rotate = false) => {
                         <h3 class="">Ingredient</h3>       
                     </div>
                     <div class="content card-item">
-                        <p class="text-lg text-white">${ing}</p>       
+                        <p class="">${ing}</p>       
                     </div>
                 </div>`
 };
