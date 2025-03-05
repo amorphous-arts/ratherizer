@@ -100,7 +100,7 @@
 }
 .context-token-container {
     display: flex;
-    max-width: 120px;
+    max-width: 150px;
     column-gap: 1rem;
     row-gap: 1rem;
     flex-wrap: wrap;
