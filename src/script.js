@@ -11,7 +11,7 @@ import { addStats } from "./database/insert";
 const gameConainer = document.querySelector('.game-container');
 
 const afterToken = {
-    'drinks': 'to drink',
+    'extras': 'to drink',
     'sides': 'with a side of',
     'topped': 'topped with',
     'extras': 'with'
@@ -26,7 +26,7 @@ const mealChoices = async () => {
         meal: meals[0],
         firstIng: ing[0][0][0],
         secondIng: ing[0][0][1],
-        firstToken: meals[0].token == 'stuffed' ? 'stuffed' : '',
+        firstToken: meals[0].key == 'stuffed' ? 'stuffed' : '',
         secondToken: afterToken[ing[1][0][0].key],
         thirdIng: ing[1][0][0],
         fourthIng: ing[1][0][1],
@@ -36,7 +36,7 @@ const mealChoices = async () => {
         meal: meals[1],
         firstIng: ing[0][1][0],
         secondIng: ing[0][1][1],
-        firstToken: meals[1].token == 'stuffed' ? 'stuffed' : '',
+        firstToken: meals[1].key == 'stuffed' ? 'stuffed' : '',
         secondToken: afterToken[ing[1][1][0].key],
         thirdIng: ing[1][1][0],
         fourthIng: ing[1][1][1],
@@ -61,17 +61,15 @@ const chooseMealTrigger = () => {
                 }
             }
             gameConainer.insertAdjacentHTML('beforeend', analytics(perc));
-            gameConainer.insertAdjacentHTML('beforeend', btn('Play Again !', '', '', '/'));
+            gameConainer.insertAdjacentHTML('beforeend', btn('Play Again !', '', '', '/', 'play-again-btn'));
         })
     });
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    console.log(gameConainer);
     if(gameConainer) {
         await mealChoices();
-        cardFlip();
+        // cardFlip();
         chooseMealTrigger();
     }
-    
 });

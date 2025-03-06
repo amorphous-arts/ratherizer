@@ -171,11 +171,14 @@ export const addMeals = async () => {
 }
 
 export const addStats = async (meal) => {
+  const mealCount = await searchStats(meal);
+  const totalCount = await getStatsCount();
+  
   Object.keys(meal).forEach(key => {
     meal[key] = meal[key].hasOwnProperty('id') ? meal[key].id : meal[key];
   });
+  
   await addDoc(collection(db, 'stats'), meal);
-  const mealCount = await searchStats(meal);
-  const totalCount = await getStatsCount();
+  
   return mealCount / totalCount * 100;
 }

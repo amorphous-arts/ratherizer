@@ -1,6 +1,6 @@
-const btn = (text, id, dataId, href = 'javascript:void(0)') => {
+const btn = (text, id, dataId, href = 'javascript:void(0)', cls = '') => {
     return `
-        <a href="${href}" type="button" class="btn" id="${id}" data-id="${dataId}">${text}</button>
+        <a href="${href}" type="button" class="btn ${cls}" id="${id}" data-id="${dataId}">${text}</button>
     `
 }
 

@@ -1,5 +1,5 @@
 import { db } from "./firebase";
-import { collection, doc, getAggregateFromServer, getDocs, query, where, count, getCountFromServer } from "firebase/firestore";
+import { collection, getDocs, query, where, getCountFromServer } from "firebase/firestore";
 
 export const getRandomMeals = async () => {
     const keys = ['stuffed', 'not_stuffed'];
@@ -47,17 +47,22 @@ export const getStatsCount = async () => {
 const getDataDocs = async (collection = '', key = '') => {
     const docs = await getDocs(collection);
     const length = docs.docs.length;
-    const randoms = randomKeysArray(length - 1).sort((a, b) => a - b);
+    const randoms = randomKeysArray(length);
     const data = [];
     randoms.forEach((random) => {
         let temp = docs.docs[random].data();
         temp.key = key;
-        temp.id = docs.docs[random].id
+        temp.id = docs.docs[random].id;
+        temp.rotate = getRotate();
         data.push(temp);
-    })
-
+    });
     return data;
 };
+
+const getRotate = () => {
+    const rotateArray = [0, 1];
+    return rotateArray[getRandom(rotateArray.length)];
+}
 
 const randomKeysArray = (length) => {
     let lastValue = '';
