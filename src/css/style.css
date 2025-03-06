@@ -210,6 +210,21 @@
     color: #9d4384;
 }
 
+@media (max-width: 1280px) {
+    .game-container .meal-container {
+        column-gap: 6px;
+    }
+    .game-container .ingredient-container {
+        width: 240px;
+    }
+    .game-container .card {
+        min-width: 200px;
+        width: 200px;
+        /* height: 180px;
+        min-height: 180px; */
+    }
+}
+
 @media (max-width: 768px) {
     .game-container .meal-container {
         row-gap: 4rem;
