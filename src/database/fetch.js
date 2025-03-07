@@ -15,15 +15,16 @@ export const getRandomIngredients = async () => {
     const randomBeforeKeys = [getRandom(beforeKeys.length), getRandom(beforeKeys.length)];
     const randomAfterKey = [getRandom(afterKeys.length), getRandom(afterKeys.length)];
 
-    const beforeIngredients = [await getIngredients(beforeKeys[randomBeforeKeys[0]]), await getIngredients(beforeKeys[randomBeforeKeys[1]])];
+    const beforeIngredients = [await getIngredients('card1', beforeKeys[randomBeforeKeys[0]]), await getIngredients('card1', beforeKeys[randomBeforeKeys[1]])];
 
-    const afterIngredients = [await getIngredients(afterKeys[randomAfterKey[0]]), await getIngredients(afterKeys[randomAfterKey[1]])];
+    const afterIngredients = [await getIngredients('card2', afterKeys[randomAfterKey[0]]), await getIngredients('card2', afterKeys[randomAfterKey[1]])];
 
     return [beforeIngredients, afterIngredients];
 }
 
-const getIngredients = async (key) => {
-    return await getDataDocs(collection(db, "ingredients", 'categories', key), key);
+
+const getIngredients = async (card, key) => {
+    return await getDataDocs(collection(db, "ingredients", card, key), key);
 }
 
 export const searchStats = async (meal) => {
@@ -46,7 +47,7 @@ export const getStatsCount = async () => {
 
 const getDataDocs = async (collection = '', key = '') => {
     const docs = await getDocs(collection);
-    const length = docs.docs.length;
+    const length = docs.docs.length - 1;
     const randoms = randomKeysArray(length);
     const data = [];
     randoms.forEach((random) => {

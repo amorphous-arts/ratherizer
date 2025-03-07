@@ -9,6 +9,9 @@ const context = (text) => {
                 }
                 return '';
             }).join('')}
+            <div class="ing-text">
+                <span>${text}</span>
+            </div>
         </div>
     `;
 }

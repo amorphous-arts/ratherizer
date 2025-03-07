@@ -8,13 +8,14 @@ const Meal = (id, gameConainer, meal = {}, ) => {
     mealContainer.id = id;
     mealContainer.insertAdjacentHTML('afterbegin', `
         ${ingCard(meal.firstIng.ing, meal.firstIng.attr, meal.firstIng.rotate)}
-        ${context('and')}
-        ${ingCard(meal.secondIng.ing, meal.secondIng.attr, meal.secondIng.rotate)}
+        ${ !meal.firstIng.rotate ? context('and') : '' }
+        ${ingCard(meal.secondIng.ing, meal.secondIng.attr)}
         ${meal.firstToken ? context(meal.firstToken) : ''}
         ${baseCard(meal.meal.name)}
         ${meal.secondToken ? context(meal.secondToken) : ''}
         ${ingCard(meal.thirdIng.ing, meal.thirdIng.attr, meal.thirdIng.rotate)}
-        ${ingCard(meal.fourthIng.ing, meal.fourthIng.attr, meal.fourthIng.rotate)}
+        ${ !meal.thirdIng.rotate ? context('and') : '' }
+        ${ingCard(meal.fourthIng.ing, meal.fourthIng.attr)}
     `);
     gameConainer.append(mealContainer);
 }

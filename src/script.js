@@ -5,8 +5,8 @@ import btn from "./templates/btn";
 import seperator from "./templates/seperator";
 import analytics from "./templates/analytics";
 import { getRandomIngredients, getRandomMeals } from "./database/fetch";
-// import { addIng } from "./database/insert";
-import { addStats } from "./database/insert";
+import { addIng } from "./database/insert";
+// import { addStats } from "./database/insert";
 
 const gameConainer = document.querySelector('.game-container');
 
@@ -14,7 +14,7 @@ const afterToken = {
     'extras': 'to drink',
     'sides': 'with a side of',
     'topped': 'topped with',
-    'extras': 'with'
+    'extras': 'topped with'
 }
 let firstMeal = '';
 let secondMeal = '';
@@ -71,5 +71,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         await mealChoices();
         // cardFlip();
         chooseMealTrigger();
+        // addIng();
     }
 });

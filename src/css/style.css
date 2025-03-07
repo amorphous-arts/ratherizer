@@ -78,9 +78,11 @@
 .game-container .rotate {
     transform: rotate(180deg);
 }
-.game-container .ingredient-container {
+.game-container .ingredient-container, .game-container .context-token-container {
     position: relative;
     height: 340px;
+}
+.game-container .ingredient-container {
     width: 250px;
     transform-style: preserve-3d;
     perspective: 600px;
@@ -120,6 +122,7 @@
     row-gap: 8px;
     flex-wrap: wrap;
     margin: auto 0;
+    align-content: center;
 }
 .game-container .context-token {
     border: 1px solid #e0dbd2;
@@ -229,9 +232,11 @@
     .game-container .meal-container {
         row-gap: 4rem;
     }
+    .game-container .context-token-container, .game-container .ingredient-container {
+        height: 190px;
+    }
     .game-container .ingredient-container {
         width: 150px;
-        height: 190px;
     }
     .game-container .card {
         padding: 5px 0px;
