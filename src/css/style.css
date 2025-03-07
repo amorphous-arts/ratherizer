@@ -49,6 +49,7 @@
 }
 .game-container .card h3 {
     font-size: 18px;
+    text-transform: capitalize !important;
     font-weight: 600;
     color: #e0dbd2;
     padding: 5px;
@@ -250,6 +251,9 @@
     .game-container .context-token-container, .game-container .ingredient-container {
         height: 190px;
     }
+    .game-container .context-token-container {
+        min-width: 0;
+    }
     .game-container .ingredient-container {
         width: 120px;
     }
@@ -258,7 +262,7 @@
         border-width: 4px;
     }
     .game-container .card h3 {
-        font-size: 14px;
+        font-size: 12px;
     }
     .game-container .content.card-item p {
         font-size: 10px;
