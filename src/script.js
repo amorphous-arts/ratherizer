@@ -61,7 +61,7 @@ const chooseMealTrigger = () => {
                 }
             }
             gameConainer.insertAdjacentHTML('beforeend', analytics(perc));
-            gameConainer.insertAdjacentHTML('beforeend', btn('Play Again !', '', '', '/', 'play-again-btn'));
+            gameConainer.insertAdjacentHTML('beforeend', btn('Play Again !', '', '', '', 'play-again-btn'));
         })
     });
 }
