@@ -245,7 +245,7 @@
 
 @media (max-width: 768px) {
     .game-container .meal-container {
-        row-gap: 3rem;
+        row-gap: 4rem;
         column-gap: 6px;
     }
     .game-container .context-token-container, .game-container .ingredient-container {
