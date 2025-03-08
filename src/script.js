@@ -75,5 +75,5 @@ const chooseMealTrigger = () => {
         chooseMealTrigger();
         // addIng();
     }
-})
+})();
 // });
