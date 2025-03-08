@@ -68,6 +68,7 @@ const chooseMealTrigger = () => {
 
 document.addEventListener('DOMContentLoaded', async () => {
     if(gameConainer) {
+        console.log(gameConainer);
         await mealChoices();
         // cardFlip();
         chooseMealTrigger();
