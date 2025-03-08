@@ -21,14 +21,14 @@
     width: 100%; 
     height: auto;
     row-gap: 7px;
-    column-gap: 1rem;
+    column-gap: 5px;
 }
 
 .game-container .card {
     border-width: 7px;
     border-style: solid;
     min-height: 240px;
-    width: 200px;
+    width: 170px;
     border-radius: 3px;
     text-align: center;
     padding: 10px 0px;
@@ -84,7 +84,7 @@
     height: 340px;
 }
 .game-container .ingredient-container {
-    width: 220px;
+    width: 180px;
     transform-style: preserve-3d;
     perspective: 600px;
     transition: .5s;
@@ -218,28 +218,59 @@
     color: #9d4384;
 }
 
-@media (max-width: 1024px) {
-    .game-container .meal-container {
-        column-gap: 8px;
-    }
-    .game-container .ingredient-container {
-        width: 140px;
+@media(max-width: 1500px) {
+    .game-container .ingredient-container{
+        width: 160px;     
     }
     .game-container .card {
-        width: 130px;
+        width: 150px;
+    }
+}
+
+@media(max-width: 1350px) {
+    .game-container .meal-container {
+        row-gap: 2px;
+    }
+    .game-container .ingredient-container{
+        width: 135px;     
+    }
+    .game-container .card {
+        width: 125px;
+    }
+    .game-container .card h3 {
+        font-size: 16px;
     }
     .game-container .content.card-item p {
-        font-size: 13px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .game-container .meal-container {
+        column-gap: 2px;
+    }
+    .game-container .ingredient-container {
+        width: 125px;
+    }
+    .game-container .card {
+        width: 115px;
+    }
+    .game-container .card h3 {
+        font-size: 14px;
+    }
+    .game-container .content.card-item p {
+        font-size: 12px;
     }
     .game-container .context-token span {
         font-size: 10px;
+        line-height: 14px;
     }
     .game-container .context-token-container {
-        min-width: 40px;
+        min-width: 35px;
     }
     .game-container .context-token {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
     }
 }
 
