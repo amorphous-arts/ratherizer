@@ -66,7 +66,7 @@ const chooseMealTrigger = () => {
     });
 }
 
-window.Squarespace.onInitialize( async function() {
+document.addEventListener('DOMContentLoaded', async () => {
     if(gameConainer) {
         console.log(gameConainer);
         await mealChoices();
@@ -75,12 +75,3 @@ window.Squarespace.onInitialize( async function() {
         // addIng();
     }
 });
-// document.addEventListener('DOMContentLoaded', async () => {
-//     if(gameConainer) {
-//         console.log(gameConainer);
-//         await mealChoices();
-//         // cardFlip();
-//         chooseMealTrigger();
-//         // addIng();
-//     }
-// });
