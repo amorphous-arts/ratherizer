@@ -66,7 +66,8 @@ const chooseMealTrigger = () => {
     });
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
+// document.addEventListener('DOMContentLoaded', async () => {
+( async function(){
     if(gameConainer) {
         console.log(gameConainer);
         await mealChoices();
@@ -74,4 +75,5 @@ document.addEventListener('DOMContentLoaded', async () => {
         chooseMealTrigger();
         // addIng();
     }
-});
+})
+// });
