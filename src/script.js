@@ -5,7 +5,8 @@ import btn from "./templates/btn";
 import seperator from "./templates/seperator";
 import analytics from "./templates/analytics";
 import { getRandomIngredients, getRandomMeals } from "./database/fetch";
-// import { addIng } from "./database/insert";
+import { addIng } from "./database/insert";
+// import { addMeals } from "./database/insert";
 import { addStats } from "./database/insert";
 
 const gameConainer = document.querySelector('.game-container');
@@ -69,10 +70,12 @@ const chooseMealTrigger = () => {
 // document.addEventListener('DOMContentLoaded', async () => {
 ( async function(){
     if(gameConainer) {
-        console.log(gameConainer);
+        // console.log(gameConainer);
         await mealChoices();
-        // cardFlip();
+        // // cardFlip();
         chooseMealTrigger();
+        // addIng();
+        // addMeals();
         // addIng();
     }
 })();

@@ -15,9 +15,9 @@ export const getRandomIngredients = async () => {
     const randomBeforeKeys = [getRandom(beforeKeys.length), getRandom(beforeKeys.length)];
     const randomAfterKey = [getRandom(afterKeys.length), getRandom(afterKeys.length)];
 
-    const beforeIngredients = [await getIngredients('card1', beforeKeys[randomBeforeKeys[0]]), await getIngredients('card1', beforeKeys[randomBeforeKeys[1]])];
+    const beforeIngredients = [await getIngredients('Card_1', beforeKeys[randomBeforeKeys[0]]), await getIngredients('Card_1', beforeKeys[randomBeforeKeys[1]])];
 
-    const afterIngredients = [await getIngredients('card2', afterKeys[randomAfterKey[0]]), await getIngredients('card2', afterKeys[randomAfterKey[1]])];
+    const afterIngredients = [await getIngredients('Card_2', afterKeys[randomAfterKey[0]]), await getIngredients('Card_2', afterKeys[randomAfterKey[1]])];
 
     return [beforeIngredients, afterIngredients];
 }
