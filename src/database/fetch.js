@@ -75,10 +75,10 @@ const randomKeysArray = (length) => {
     return randomArray;
 }
 const getRandom = (length, lastValue) => {
-    let value = Math.floor(Math.random() * length);
-    if (value == lastValue) {
-        return getRandom(length, lastValue);
-    } else {
-        return value;
-    }
+    return Math.floor(Math.random() * length);
+    // if (value == lastValue) {
+    //     return getRandom(length, lastValue);
+    // } else {
+    //     return value;
+    // }
 } 

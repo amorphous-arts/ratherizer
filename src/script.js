@@ -22,7 +22,9 @@ let firstMeal = '', secondMeal;
 
 const mealChoices = async () => { 
     const meals = await getRandomMeals();
+    console.log(meals);
     const ing = await getRandomIngredients();
+    console.log(ing);
     firstMeal = {
         meal: meals[0],
         firstIng: ing[0][0][0],
