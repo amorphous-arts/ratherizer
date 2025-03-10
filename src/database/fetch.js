@@ -66,19 +66,22 @@ const getRotate = () => {
 }
 
 const randomKeysArray = (length) => {
-    let lastValue = '';
+    let lastValue = -1; // Initialize with an impossible value
     const randomArray = [];
+
     for (let i = 0; i < 2; i++) {
         lastValue = getRandom(length, lastValue);
         randomArray.push(lastValue);
     }
+
     return randomArray;
-}
+};
+
 const getRandom = (length, lastValue) => {
-    return Math.floor(Math.random() * length);
-    // if (value == lastValue) {
-    //     return getRandom(length, lastValue);
-    // } else {
-    //     return value;
-    // }
-} 
+    let value;
+    do {
+        value = Math.floor(Math.random() * length);
+    } while (value === lastValue); // Retry only if it's the same
+
+    return value;
+};

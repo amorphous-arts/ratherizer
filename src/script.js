@@ -5,7 +5,7 @@ import btn from "./templates/btn";
 import seperator from "./templates/seperator";
 import analytics from "./templates/analytics";
 import { getRandomIngredients, getRandomMeals } from "./database/fetch";
-import { addIng } from "./database/insert";
+// import { addIng } from "./database/insert";
 // import { addMeals } from "./database/insert";
 import { addStats } from "./database/insert";
 
@@ -22,9 +22,7 @@ let firstMeal = '', secondMeal;
 
 const mealChoices = async () => { 
     const meals = await getRandomMeals();
-    console.log(meals);
     const ing = await getRandomIngredients();
-    console.log(ing);
     firstMeal = {
         meal: meals[0],
         firstIng: ing[0][0][0],
