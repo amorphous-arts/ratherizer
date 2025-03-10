@@ -1,12 +1,10 @@
+import './styles/style.scss';
 
-import cardFlip from "./card_flip";
 import Meal from "./templates/meal";
 import btn from "./templates/btn";
 import seperator from "./templates/seperator";
 import analytics from "./templates/analytics";
 import { getRandomIngredients, getRandomMeals } from "./database/fetch";
-// import { addIng } from "./database/insert";
-// import { addMeals } from "./database/insert";
 import { addStats } from "./database/insert";
 
 const gameConainer = document.querySelector('.game-container');
@@ -18,12 +16,16 @@ const afterToken = {
     'drinks': 'with a side of',
 };
 
-let firstMeal = '', secondMeal;
+let meals = {
+    meal1: '',
+    meal2: '',
+};
 
 const mealChoices = async () => { 
-    const meals = await getRandomMeals();
-    const ing = await getRandomIngredients();
-    firstMeal = {
+    const [meals, ing] = await Promise.all([ getRandomMeals(), getRandomIngredients()]);
+
+
+    meals.meal1 = {
         meal: meals[0],
         firstIng: ing[0][0][0],
         secondIng: ing[0][0][1],
@@ -33,7 +35,7 @@ const mealChoices = async () => {
         fourthIng: ing[1][0][1],
     }
 
-    secondMeal = {
+    meals.meal2 = {
         meal: meals[1],
         firstIng: ing[0][1][0],
         secondIng: ing[0][1][1],
@@ -43,18 +45,22 @@ const mealChoices = async () => {
         fourthIng: ing[1][1][1],
     }
 
-    Meal('meal-1', gameConainer, firstMeal);
-    gameConainer.insertAdjacentHTML('beforeend', btn('Choose Meal 1', 'meal-1-trigger', 'meal-1'));
+    Meal('meal1', gameConainer, meals.meal1);
+    gameConainer.insertAdjacentHTML('beforeend', btn('Choose Meal 1', 'meal-1-trigger', 'meal1'));
     gameConainer.insertAdjacentHTML('beforeend', seperator);
-    Meal('meal-2', gameConainer, secondMeal);
-    gameConainer.insertAdjacentHTML('beforeend', btn('Choose Meal 2', 'meal-2-trigger', 'meal-2'));
+    Meal('meal2', gameConainer, meals.meal2);
+    gameConainer.insertAdjacentHTML('beforeend', btn('Choose Meal 2', 'meal-2-trigger', 'meal2'));
 };
 
 const chooseMealTrigger = () => {
     document.querySelectorAll('.game-container .btn').forEach((trigger) => {
         trigger.addEventListener('click', async () => {
             const mealId = trigger.getAttribute('data-id');
-            const perc = await addStats(mealId == 1 ? firstMeal : secondMeal);
+            if(!meals[mealId]) {
+                return console.error('Meal not found');
+            }
+
+            const perc = await addStats(meals[mealId]);
             for (let node of [...gameConainer.children]) { 
                 if (node.id !== mealId) {
                     node.classList.add('fade-out');

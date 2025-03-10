@@ -1,9 +1,15 @@
-import { db } from "./firebase";
-import { collection, getDocs, query, where, getCountFromServer } from "firebase/firestore";
+import {db} from "./firebase";
+import {collection, getCountFromServer, getDocs, query, where} from "firebase/firestore";
 
+const CARDS_IN_PLAY = [];
+
+/**
+ * Returns a random base meal
+ * @return {Promise<*[]>}
+ */
 export const getRandomMeals = async () => {
     const keys = ['stuffed', 'not_stuffed'];
-    const key = keys[getRandom(keys.length)];
+    const key = keys[getRandom(keys.length)]; // either get's stuffed or not stuffed
 
     return await getDataDocs(collection(db, 'base_meals', 'categories', key), key);
 }
@@ -15,8 +21,10 @@ export const getRandomIngredients = async () => {
     const randomBeforeKeys = [getRandom(beforeKeys.length), getRandom(beforeKeys.length)];
     const randomAfterKey = [getRandom(afterKeys.length), getRandom(afterKeys.length)];
 
+    // before the base meal
     const beforeIngredients = [await getIngredients('Card_1', beforeKeys[randomBeforeKeys[0]]), await getIngredients('Card_1', beforeKeys[randomBeforeKeys[1]])];
 
+    // after the base meal
     const afterIngredients = [await getIngredients('Card_2', afterKeys[randomAfterKey[0]]), await getIngredients('Card_2', afterKeys[randomAfterKey[1]])];
 
     return [beforeIngredients, afterIngredients];
@@ -24,7 +32,10 @@ export const getRandomIngredients = async () => {
 
 
 const getIngredients = async (card, key) => {
-    return await getDataDocs(collection(db, "ingredients", card, key), key);
+    // let filter = CARDS_IN_PLAY.length > 0 ? where('id', 'not-in', CARDS_IN_PLAY) : undefined; // TODO maybe
+    let filter = undefined;
+
+    return await getDataDocs(query(collection(db, "ingredients", card, key), filter), key);
 }
 
 export const searchStats = async (meal) => {
@@ -45,18 +56,28 @@ export const getStatsCount = async () => {
     return stats.data().count;
 }
 
-const getDataDocs = async (collection = '', key = '') => {
+/**
+ *
+ * @param {CollectionReference<DocumentData, DocumentData>|Query<DocumentData,DocumentData>} collection
+ * @param {string} key
+ * @return {Promise<*[]>}
+ */
+const getDataDocs = async (collection, key) => {
     const docs = await getDocs(collection);
-    const length = docs.docs.length - 1;
-    const randoms = randomKeysArray(length);
+    // const length = docs.docs;
+
+    const randoms = randomDocs(docs.docs);
     const data = [];
+
+
     randoms.forEach((random) => {
-        let temp = docs.docs[random].data();
+        let temp = random.data();
         temp.key = key;
-        temp.id = docs.docs[random].id;
+        temp.id = random.id;
         temp.rotate = getRotate();
         data.push(temp);
     });
+
     return data;
 };
 
@@ -65,23 +86,26 @@ const getRotate = () => {
     return rotateArray[getRandom(rotateArray.length)];
 }
 
-const randomKeysArray = (length) => {
-    let lastValue = -1; // Initialize with an impossible value
-    const randomArray = [];
+const randomDocs = (docs) => {
+    let length = docs.length;
+    const result = [];
 
-    for (let i = 0; i < 2; i++) {
-        lastValue = getRandom(length, lastValue);
-        randomArray.push(lastValue);
+    for(let i = 0, value; i < 2; i++) {
+        do {
+            let i = getRandom(length);
+            value = docs.splice(i, 1)[0];
+
+            // fixme this isn't perfect yet - value should never be null
+        } while(!value || CARDS_IN_PLAY.includes(value.id));
+        CARDS_IN_PLAY.push(value.id);
+
+        length--;
+        result.push(value);
     }
 
-    return randomArray;
+    return result;
 };
 
-const getRandom = (length, lastValue) => {
-    let value;
-    do {
-        value = Math.floor(Math.random() * length);
-    } while (value === lastValue); // Retry only if it's the same
-
-    return value;
+const getRandom = (length) => {
+    return Math.floor(Math.random() * length);
 };
