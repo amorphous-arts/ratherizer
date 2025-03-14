@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
+
+.game-container h3, .game-container h2, .game-container h1, .game-container span, .game-container p, .game-container a {
+  font-family: "Artifika", serif;
+}
+
+.game-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  row-gap: 1rem;
+  transition: 0.5s;
+  width: 100%;
+
+  .meal-container {
+    column-gap: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    row-gap: 7px;
+    width: 100%;
+  }
+
+  .card {
+    backface-visibility: hidden;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 7px;
+    min-height: 240px;
+    padding: 10px 0;
+    text-align: center;
+    transition: 0.5s;
+    width: 170px;
+
+    h3 {
+      color: #e0dbd2;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0;
+      padding: 5px;
+      text-transform: capitalize !important;
+    }
+  }
+
+  .base-card {
+    background-color: #e0dbd2;
+
+    .card-item {
+      border-color: black;
+    }
+
+    h3 {
+      color: black;
+      text-transform: capitalize !important;
+    }
+  }
+
+  .content.card-item p {
+    font-size: 16px;
+  }
+
+  .card, .attr-data, .ing-data, .base-data {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  .card-item {
+    border: 1px solid #e0dbd2;
+    border-radius: 20px;
+
+    &.content {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .ing-card .card-item.content {
+    height: 80px;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+  .ingredient-container, .context-token-container {
+    height: 340px;
+    position: relative;
+  }
+
+  .ingredient-container {
+    perspective: 600px;
+    transform-style: preserve-3d;
+    transition: .5s;
+    width: 180px;
+
+    &:hover > .card {
+      border-color: #9d4384;
+    }
+
+    * {
+      pointer-events: none;
+    }
+  }
+
+  .ing-card {
+    background: black;
+    border-color: #e0dbd2;
+    color: #e0dbd2;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: .5s;
+
+    &.back {
+      transform: rotateX(180deg);
+    }
+
+    &.front {
+      transform: rotateX(0deg);
+    }
+  }
+
+  .ing-text {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 290px;
+    width: 98%;
+
+    span {
+      color: white;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  .context-token-container {
+    align-content: center;
+    column-gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 0;
+    max-width: 120px;
+    min-width: 50px;
+    row-gap: 8px;
+  }
+
+  .context-token {
+    align-items: center;
+    background: black;
+    border: 1px solid #e0dbd2;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    padding: 5px;
+    width: 50px;
+
+    span {
+      font-size: 11px;
+      line-height: 16px;
+      text-align: center;
+    }
+  }
+
+  .base-card {
+    max-height: 250px;
+
+    .card-item.content {
+      height: 207px;
+    }
+  }
+
+  .btn {
+    align-self: center;
+    background: white;
+    border: 3px solid white;
+    border-radius: 4px;
+
+    color: #532127 !important;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    transition: .5s;
+
+    &:hover {
+      background: white;
+      border-color: black;
+      color: black;
+
+    }
+  }
+
+  .seperator-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    .line {
+      align-self: center;
+      background-color: lightgray;
+      display: flex;
+      height: 2px;
+      justify-self: center;
+      position: absolute;
+      width: 100%;
+      z-index: 0;
+    }
+
+    .text {
+      align-items: center;
+      background: black;
+      display: flex;
+      height: 30px;
+      justify-content: center;
+      margin: auto;
+      padding: 20px;
+      position: relative;
+      z-index: 100;
+    }
+
+    span {
+      color: lightgray;
+      font-size: 20px;
+    }
+
+  }
+
+  .fade-out {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .meal-analytics p {
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    padding: 40px 0 10px 0;
+    text-align: center;
+    width: 100%;
+
+    strong {
+      color: #9d4384;
+    }
+  }
+
+
+  @media(max-width: 1500px) {
+
+    .ingredient-container {
+      width: 160px;
+    }
+    .card {
+      width: 150px;
+    }
+  }
+}
+
+
+@media(max-width: 1350px) {
+  .game-container .meal-container {
+    row-gap: 2px;
+  }
+  .game-container .ingredient-container {
+    width: 135px;
+  }
+  .game-container .card {
+    width: 125px;
+  }
+  .game-container .card h3 {
+    font-size: 16px;
+  }
+  .game-container .content.card-item p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .game-container .meal-container {
+    column-gap: 2px;
+  }
+  .game-container .ingredient-container {
+    width: 125px;
+  }
+  .game-container .card {
+    width: 115px;
+  }
+  .game-container .card h3 {
+    font-size: 14px;
+  }
+  .game-container .content.card-item p {
+    font-size: 12px;
+  }
+  .game-container .context-token span {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .game-container .context-token-container {
+    min-width: 35px;
+  }
+  .game-container .context-token {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .game-container .meal-container {
+    column-gap: 6px;
+    row-gap: 4rem;
+  }
+  .game-container .context-token-container, .game-container .ingredient-container {
+    height: 190px;
+  }
+  .game-container .context-token-container {
+    min-width: 0;
+  }
+  .game-container .ingredient-container {
+    width: 120px;
+  }
+  .game-container .card {
+    border-width: 4px;
+    padding: 5px 0;
+  }
+  .game-container .card h3 {
+    font-size: 12px;
+  }
+  .game-container .content.card-item p {
+    font-size: 10px;
+  }
+  .game-container .card {
+    height: 180px;
+    min-height: 180px;
+    width: 110px;
+  }
+  .game-container .ing-card .card-item.content {
+    height: 53px;
+  }
+  .game-container .base-card .card-item.content {
+    height: 144px;
+  }
+  .game-container .context-token span {
+    font-size: 10px;
+  }
+  .game-container .ing-text {
+    top: 210px;
+    width: 100%;
+  }
+  .game-container .ing-text span {
+    font-size: 10px;
+  }
+  .game-container .btn {
+    border-bottom: 2px solid black;
+    font-size: 18px;
+    margin-top: 3rem;
+    padding: 10px;
+  }
+  .game-container .seperator-container {
+    margin: 1rem 0;
+  }
+  .game-container .seperator-container .text {
+    height: 18px;
+    padding: 15px;
+  }
+  .game-container .seperator-container span {
+    font-size: 16px;
+  }
+  .game-container p.meal-analytics {
+    font-size: 20px;
+    padding: 30px 0 0 0;
+  }
+  .game-container .play-again-btn {
+    margin-top: 0 !important;
+  }
+}

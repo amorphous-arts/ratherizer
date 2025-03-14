@@ -1,5 +1,5 @@
-const analytics = (perc) => {
-    return `<div class="meal-analytics"><p> This meal was also chosen by <strong>${parseFloat(perc).toFixed(2)}%</strong> of users.</p></div>`;
+const analytics = () => {
+    return `<p class="meal-analytics">This meal was also chosen by <span id="percentage"></span> of users.</p>`;
 }
 
 export default analytics;
