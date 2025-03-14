@@ -1,6 +1,4 @@
 import '../assets/styles/style.scss';
-import fartAudio from '../assets/audio/fart.mp3';
-
 import Meal from "./templates/meal";
 import btn from "./templates/btn";
 import seperator from "./templates/seperator";
@@ -104,7 +102,7 @@ function addGamification() {
  * Don't ask lol
  */
 function addFartSound() {
-    const audio = new Audio(fartAudio);
+    const audio = new Audio('https://cdn.jsdelivr.net/gh/amorphous-arts/ratherizer/assets/audio/fart.mp3');
     document.body.appendChild(audio);
 
     document.addEventListener('mouseover', (e) => {
