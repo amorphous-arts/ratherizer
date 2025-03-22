@@ -1,32 +1,42 @@
 import {db} from "./firebase.js";
-import {collection, getCountFromServer, getDocs, query, where} from "firebase/firestore";
+import {collection, getCountFromServer, query, where} from "firebase/firestore";
 import CardManager from "../manager/card-manager.js";
-
-const CARDS_IN_PLAY = [];
+import {StaticCardCollection} from "../collection/static-card-collection";
+import {BasemealCard} from "../Entity/basemeal-card";
+import {IngredientCard} from "../Entity/ingredient-card";
 
 /**
  * Returns a random base meal
  * @return {Promise<*[]>}
  */
-export const getRandomMeals = async () => {
-    return (new CardManager('real_base_meals', 'categories')).getIngredients();
+export const getRandomMeals = async (): Promise<BasemealCard[]> => {
+    const manager = new CardManager<BasemealCard>(new StaticCardCollection('base_meal'));
+
+    // bit of a dirty hack to get two different meals
+    return [(await manager.getIngredients())[0], (await manager.getIngredients())[0]];
 }
 
 export const getRandomIngredients = async () => {
-    const beforeIngredientManager = new CardManager('real_ingredients', 'Card_1');
-    const afterIngredientManager = new CardManager('real_ingredients', 'Card_2');
+    const beforeIngredientManager = new CardManager<IngredientCard>(new StaticCardCollection<IngredientCard>('Card_1'));
+    const afterIngredientManager = new CardManager<IngredientCard>(new StaticCardCollection<IngredientCard>('Card_2'));
 
     // do it in sets so we don't get the same ingredients
     const set1 = await Promise.all([beforeIngredientManager.getIngredients(), afterIngredientManager.getIngredients()]);
     const set2 = await Promise.all([beforeIngredientManager.getIngredients(), afterIngredientManager.getIngredients()]);
 
     return [
-      [set1[0], set2[0]],
-      [set1[1], set2[1]]
+      set1,
+      set2,
     ];
 }
 
+/**
+ * @deprecated Might return in a later version
+ * @param meal
+ */
 export const searchStats = async (meal) => {
+    return 0;
+
     const getRelatedMeals = await getCountFromServer(query(
         collection(db, "stats"),
         where("firstIng", "==", meal.firstIng),
@@ -39,7 +49,12 @@ export const searchStats = async (meal) => {
     return getRelatedMeals.data().count;
 }
 
+/**
+ * @deprecated Might return in a later version
+ */
 export const getStatsCount = async () => {
+    return 0;
+
     const stats =  await getCountFromServer(collection(db, "stats"));
     return stats.data().count;
 }

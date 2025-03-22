@@ -1,4 +1,4 @@
-export default class MathUtil {
+export default class Random {
 
   static randomInclusive = (min, max) => {
     const minCeiled = Math.ceil(min);
