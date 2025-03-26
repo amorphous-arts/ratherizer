@@ -3,7 +3,6 @@ import {Meal as MealTemplate} from "./templates/meal";
 import {Meal} from "./Entity/meal";
 import btn from "./templates/btn";
 import seperator from "./templates/seperator";
-import analytics from "./templates/analytics";
 import {getRandomIngredients, getRandomMeals} from "./database/fetch";
 import {addStats} from "./database/insert";
 import {addFartSound} from "./gamification/fart";
@@ -31,11 +30,14 @@ const mealChoices = async() => {
     ing[1][1]
   );
 
-  MealTemplate('meal1', gameContainer, meals.meal1);
-  gameContainer.insertAdjacentHTML('beforeend', btn('Choose Meal 1', 'meal-1-trigger', 'meal1'));
+  const meal1 = MealTemplate('meal1', meals.meal1);
+  meal1.insertAdjacentHTML('beforeend', btn('Choose Meal 1', 'meal-1-trigger', 'meal1'));
+  gameContainer.appendChild(meal1);
   gameContainer.insertAdjacentHTML('beforeend', seperator);
-  MealTemplate('meal2', gameContainer, meals.meal2);
-  gameContainer.insertAdjacentHTML('beforeend', btn('Choose Meal 2', 'meal-2-trigger', 'meal2'));
+
+  const meal2 = MealTemplate('meal2', meals.meal2);
+  meal2.insertAdjacentHTML('beforeend', btn('Choose Meal 2', 'meal-2-trigger', 'meal2'));
+  gameContainer.appendChild(meal2);
 };
 
 const chooseMealTrigger = () => {
@@ -46,6 +48,7 @@ const chooseMealTrigger = () => {
         return console.error('Meal not found');
       }
 
+      // fixme
       for(let node of [...gameContainer.children]) {
         if(node.id !== mealId) {
           node.classList.add('fade-out');

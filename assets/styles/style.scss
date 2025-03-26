@@ -12,17 +12,59 @@
   min-height: 80vh;
   row-gap: 1rem;
   transition: 0.5s;
-  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  background: rgba(121, 34, 95, 0.77);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 16px #0006;
 
   .meal-container {
-    column-gap: 5px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
-    justify-content: center;
-    row-gap: 7px;
-    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+
+    .row {
+      column-gap: 5px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+      justify-content: space-between;
+      row-gap: 7px;
+
+      @media (max-width: 576px) {
+        flex-direction: column;
+
+        .context-token-container:empty {
+          display: none;
+        }
+      }
+
+
+      &:nth-child(2) {
+        color: white;
+        justify-content: space-evenly;
+
+        @media (max-width: 768px) {
+          display: block;
+          text-align: center;
+        }
+      }
+
+      & > * {
+        margin: auto;
+      }
+
+
+      .context-token-container:empty {
+        width: 67px;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
   }
 
   .card {
@@ -88,15 +130,11 @@
     transform: rotate(180deg);
   }
 
-  .ingredient-container, .context-token-container {
-    height: 340px;
-    position: relative;
-  }
-
   .ingredient-container {
     perspective: 600px;
     transform-style: preserve-3d;
     transition: .5s;
+    position: relative;
     width: 180px;
 
     &:hover > .card {
@@ -112,31 +150,15 @@
     background: black;
     border-color: #e0dbd2;
     color: #e0dbd2;
-    left: 0;
-    position: absolute;
-    top: 0;
     transition: .5s;
 
     &.back {
+      display: none;
       transform: rotateX(180deg);
     }
 
     &.front {
       transform: rotateX(0deg);
-    }
-  }
-
-  .ing-text {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 290px;
-    width: 98%;
-
-    span {
-      color: white;
-      font-size: 14px;
-      text-align: center;
     }
   }
 
@@ -146,8 +168,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto 0;
-    max-width: 120px;
-    min-width: 50px;
     row-gap: 8px;
   }
 
@@ -254,131 +274,131 @@
   }
 
 
-  @media(max-width: 1500px) {
-
-    .ingredient-container {
-      width: 160px;
-    }
-    .card {
-      width: 150px;
-    }
-  }
+  //@media(max-width: 1500px) {
+  //
+  //  .ingredient-container {
+  //    width: 160px;
+  //  }
+  //  .card {
+  //    width: 150px;
+  //  }
+  //}
 }
 
-
-@media(max-width: 1350px) {
-  .game-container .meal-container {
-    row-gap: 2px;
-  }
-  .game-container .ingredient-container {
-    width: 135px;
-  }
-  .game-container .card {
-    width: 125px;
-  }
-  .game-container .card h3 {
-    font-size: 16px;
-  }
-  .game-container .content.card-item p {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .game-container .meal-container {
-    column-gap: 2px;
-  }
-  .game-container .ingredient-container {
-    width: 125px;
-  }
-  .game-container .card {
-    width: 115px;
-  }
-  .game-container .card h3 {
-    font-size: 14px;
-  }
-  .game-container .content.card-item p {
-    font-size: 12px;
-  }
-  .game-container .context-token span {
-    font-size: 10px;
-    line-height: 14px;
-  }
-  .game-container .context-token-container {
-    min-width: 35px;
-  }
-  .game-container .context-token {
-    height: 35px;
-    width: 35px;
-  }
-}
-
-@media (max-width: 768px) {
-  .game-container .meal-container {
-    column-gap: 6px;
-    row-gap: 4rem;
-  }
-  .game-container .context-token-container, .game-container .ingredient-container {
-    height: 190px;
-  }
-  .game-container .context-token-container {
-    min-width: 0;
-  }
-  .game-container .ingredient-container {
-    width: 120px;
-  }
-  .game-container .card {
-    border-width: 4px;
-    padding: 5px 0;
-  }
-  .game-container .card h3 {
-    font-size: 12px;
-  }
-  .game-container .content.card-item p {
-    font-size: 10px;
-  }
-  .game-container .card {
-    height: 180px;
-    min-height: 180px;
-    width: 110px;
-  }
-  .game-container .ing-card .card-item.content {
-    height: 53px;
-  }
-  .game-container .base-card .card-item.content {
-    height: 144px;
-  }
-  .game-container .context-token span {
-    font-size: 10px;
-  }
-  .game-container .ing-text {
-    top: 210px;
-    width: 100%;
-  }
-  .game-container .ing-text span {
-    font-size: 10px;
-  }
-  .game-container .btn {
-    border-bottom: 2px solid black;
-    font-size: 18px;
-    margin-top: 3rem;
-    padding: 10px;
-  }
-  .game-container .seperator-container {
-    margin: 1rem 0;
-  }
-  .game-container .seperator-container .text {
-    height: 18px;
-    padding: 15px;
-  }
-  .game-container .seperator-container span {
-    font-size: 16px;
-  }
-  .game-container p.meal-analytics {
-    font-size: 20px;
-    padding: 30px 0 0 0;
-  }
-  .game-container .play-again-btn {
-    margin-top: 0 !important;
-  }
-}
+//
+//@media(max-width: 1350px) {
+//  .game-container .meal-container {
+//    row-gap: 2px;
+//  }
+//  .game-container .ingredient-container {
+//    width: 135px;
+//  }
+//  .game-container .card {
+//    width: 125px;
+//  }
+//  .game-container .card h3 {
+//    font-size: 16px;
+//  }
+//  .game-container .content.card-item p {
+//    font-size: 14px;
+//  }
+//}
+//
+//@media (max-width: 1200px) {
+//  .game-container .meal-container {
+//    column-gap: 2px;
+//  }
+//  .game-container .ingredient-container {
+//    width: 125px;
+//  }
+//  .game-container .card {
+//    width: 115px;
+//  }
+//  .game-container .card h3 {
+//    font-size: 14px;
+//  }
+//  .game-container .content.card-item p {
+//    font-size: 12px;
+//  }
+//  .game-container .context-token span {
+//    font-size: 10px;
+//    line-height: 14px;
+//  }
+//  .game-container .context-token-container {
+//    min-width: 35px;
+//  }
+//  .game-container .context-token {
+//    height: 35px;
+//    width: 35px;
+//  }
+//}
+//
+//@media (max-width: 768px) {
+//  .game-container .meal-container {
+//    column-gap: 6px;
+//    row-gap: 4rem;
+//  }
+//  .game-container .context-token-container, .game-container .ingredient-container {
+//    height: 190px;
+//  }
+//  .game-container .context-token-container {
+//    min-width: 0;
+//  }
+//  .game-container .ingredient-container {
+//    width: 120px;
+//  }
+//  .game-container .card {
+//    border-width: 4px;
+//    padding: 5px 0;
+//  }
+//  .game-container .card h3 {
+//    font-size: 12px;
+//  }
+//  .game-container .content.card-item p {
+//    font-size: 10px;
+//  }
+//  .game-container .card {
+//    height: 180px;
+//    min-height: 180px;
+//    width: 110px;
+//  }
+//  .game-container .ing-card .card-item.content {
+//    height: 53px;
+//  }
+//  .game-container .base-card .card-item.content {
+//    height: 144px;
+//  }
+//  .game-container .context-token span {
+//    font-size: 10px;
+//  }
+//  .game-container .ing-text {
+//    top: 210px;
+//    width: 100%;
+//  }
+//  .game-container .ing-text span {
+//    font-size: 10px;
+//  }
+//  .game-container .btn {
+//    border-bottom: 2px solid black;
+//    font-size: 18px;
+//    margin-top: 3rem;
+//    padding: 10px;
+//  }
+//  .game-container .seperator-container {
+//    margin: 1rem 0;
+//  }
+//  .game-container .seperator-container .text {
+//    height: 18px;
+//    padding: 15px;
+//  }
+//  .game-container .seperator-container span {
+//    font-size: 16px;
+//  }
+//  .game-container p.meal-analytics {
+//    font-size: 20px;
+//    padding: 30px 0 0 0;
+//  }
+//  .game-container .play-again-btn {
+//    margin-top: 0 !important;
+//  }
+//}

@@ -28,7 +28,7 @@ export const addStats = async(meal: Meal) => {
     gtag('event', 'meal_choice', {
       'event': 'meal_choice',
       'meal-id': 'meal1',
-      'meal-name': meals.meal1.mealDescriptions[0].ingredient
+      'meal-name': meal.mealDescriptions[0].ingredient
     });
   }
 }

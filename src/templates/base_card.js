@@ -11,9 +11,9 @@ const baseCard = (meal) => {
                     </div>
                 </div>
             </div>
-            <div class="ing-text">
+            <!-- div class="ing-text">
                 <span>${meal}</span>
-            </div>
+            </div> -->
         </div>
     `
 };
