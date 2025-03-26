@@ -1,10 +1,6 @@
 {
     "stuffed": [
         {
-            "descriptor": "Stuffed Shells",
-            "uuid": "754717a1-85b0-479e-9888-c5a82f76fe4d"
-        },
-        {
             "descriptor": "Wellington",
             "uuid": "212d4c15-2364-4b84-9965-27741ff6e26f"
         },
@@ -66,6 +62,10 @@
         }
     ],
     "not_stuffed": [
+        {
+            "descriptor": "Stuffed Shells",
+            "uuid": "754717a1-85b0-479e-9888-c5a82f76fe4d"
+        },
         {
             "descriptor": "Top Ramen",
             "uuid": "86b132fd-ce6a-4aed-a2ba-68d11d3d589c"

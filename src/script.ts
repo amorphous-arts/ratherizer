@@ -10,17 +10,17 @@ import {addFartSound} from "./gamification/fart";
 const gameContainer = document.querySelector('.game-container');
 
 
-let meals: {meal1: Meal, meal2: Meal} = {
+let meals: { meal1: Meal, meal2: Meal } = {
   meal1: undefined,
   meal2: undefined,
 };
 
-const mealChoices = async() => {
+const mealChoices = async () => {
   const [randomMeals, ing] = await Promise.all([getRandomMeals(), getRandomIngredients()]);
 
   meals.meal1 = new Meal(
     ing[0][0],
-      randomMeals[0],
+    randomMeals[0],
     ing[0][1]
   );
 
@@ -30,53 +30,66 @@ const mealChoices = async() => {
     ing[1][1]
   );
 
-  const meal1 = MealTemplate('meal1', meals.meal1);
-  meal1.insertAdjacentHTML('beforeend', btn('Choose Meal 1', 'meal-1-trigger', 'meal1'));
-  gameContainer.appendChild(meal1);
-  gameContainer.insertAdjacentHTML('beforeend', seperator);
+  const mealHtml = (meal: Meal, id: string, btnText: string): HTMLDivElement => {
 
-  const meal2 = MealTemplate('meal2', meals.meal2);
-  meal2.insertAdjacentHTML('beforeend', btn('Choose Meal 2', 'meal-2-trigger', 'meal2'));
-  gameContainer.appendChild(meal2);
+    const wrapper = document.createElement('div');
+    wrapper.id = id;
+
+    const html = MealTemplate(meal);
+    html.id = `${id}-container`;
+
+    const chooseMealBtn = btn(btnText, id);
+    chooseMealTrigger(chooseMealBtn, meal);
+
+    html.appendChild(chooseMealBtn);
+
+    return html;
+  }
+
+  gameContainer.appendChild(mealHtml(meals.meal1, 'meal-1', 'Choose Meal 1'));
+  gameContainer.insertAdjacentHTML('beforeend', seperator);
+  gameContainer.appendChild(mealHtml(meals.meal2, 'meal-2', 'Choose Meal 2'));
 };
 
-const chooseMealTrigger = () => {
-  document.querySelectorAll('.game-container .btn').forEach((trigger) => {
-    trigger.addEventListener('click', async() => {
-      const mealId = trigger.getAttribute('data-id');
-      if(!meals[mealId]) {
-        return console.error('Meal not found');
-      }
+const chooseMealTrigger = (chooseMealBtn: HTMLAnchorElement, meal: Meal) => {
+  chooseMealBtn.addEventListener('click', async (e: MouseEvent) => {
+    const parent = (e.target as HTMLElement).parentNode;
+    const siblings = document.querySelectorAll(`.game-container > *:not(#${parent.id})`);
 
-      // fixme
-      for(let node of [...gameContainer.children]) {
-        if(node.id !== mealId) {
-          node.classList.add('fade-out');
-          setTimeout(() => node.remove(), 1000);
-        }
-      }
+    const hideElems = (className: string) => {
+      siblings.forEach(sib => sib.classList.add(className));
+      e.target.classList.add(className);
+    }
 
-      addStats(meals[mealId]);
-      gameContainer.insertAdjacentHTML('beforeend', btn('Play Again !', '', '', '', 'play-again-btn'));
+    hideElems('fade-out');
+    setTimeout(() => hideElems('hide'), 500);
 
-      const shareBtn = document.createElement('a');
-      shareBtn.text = 'Share';
-      shareBtn.href = '#';
-      shareBtn.classList.add('btn');
-      shareBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        share(meals[mealId]);
-      });
+    addStats(meal);
 
-      gameContainer.appendChild(shareBtn);
+    const playAgain = btn('Play Again!', 'btn-play-again');
+    playAgain.addEventListener('click', clickPlayAgain);
+
+    const shareBtn = btn('Share', '');
+    shareBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      share();
     });
+
+    gameContainer.appendChild(shareBtn);
+    gameContainer.appendChild(playAgain);
   });
 }
 
-function share(meal: Meal){
+function clickPlayAgain(): void {
+  location.reload();
+}
+
+function share() {
+  const mealText = [...document.querySelectorAll('.meal-container:not(.hide) .meal-string *')].map(x => x.innerText).join(' ').replace(/\s+/, ' ')
+
   const data = {
     title: 'Ratherizer',
-    text: `I'd rather eat ${meal.mealDescriptions[1].ingredient} ${meal.firstContextToken} ${meal.basemeal.descriptor}. What would you rather eat?`,
+    text: `I'd rather eat ${mealText}. What would you rather eat?`,
     url: location.href
   };
 
@@ -96,16 +109,7 @@ function addGamification() {
 // document.addEventListener('DOMContentLoaded', async () => {
 (async function() {
   if(gameContainer) {
-    console.time('Starting');
-
     addGamification();
-
     await mealChoices();
-    // cardFlip();
-    chooseMealTrigger();
-
-    // await addMeals();
-    // await addIng();
-    console.timeEnd('Starting');
   }
 })();

@@ -5,14 +5,12 @@ import {Meal as MealEntity} from "../Entity/meal";
 
 /**
  *
- * @param id
  * @param meal
  * @returns {HTMLDivElement} The meal container with all the cards
  */
-export function Meal(id: string, meal: MealEntity): HTMLDivElement {
+export function Meal(meal: MealEntity): HTMLDivElement {
   const mealContainer = document.createElement('div');
   mealContainer.className = `meal-container`;
-  mealContainer.id = id;
 
   const firstCard = meal.mealDescriptions[0];
   const secondCard = meal.mealDescriptions[1];
@@ -32,7 +30,7 @@ export function Meal(id: string, meal: MealEntity): HTMLDivElement {
         ${context(fourthCard.doRotate || fifthCard.doRotate ? '' : 'and')}
         ${ingCard(fifthCard.ingredient, fifthCard.attribute, fifthCard.doRotate)}
     </div>
-    <div class="row">
+    <div class="row meal-string">
     <span>${firstCard.doRotate ? firstCard.attribute : firstCard.ingredient}</span>
     <span>${firstCard.doRotate || secondCard.doRotate ? '' : 'and'}</span>
     <span>${secondCard.doRotate ? secondCard.attribute : secondCard.ingredient}</span>
@@ -42,12 +40,6 @@ export function Meal(id: string, meal: MealEntity): HTMLDivElement {
     <span>${fourthCard.doRotate ? fourthCard.attribute : fourthCard.ingredient}</span>
     <span>${fourthCard.doRotate || fifthCard.doRotate ? '' : 'and'}</span>
     <span>${fifthCard.doRotate ? fifthCard.attribute : fifthCard.ingredient}</span>
-    
-    
-    <!--  <span>${firstCard.doRotate ? firstCard.attribute : firstCard.ingredient}</span>
-     <span>${firstCard.doRotate ? firstCard.attribute : firstCard.ingredient}</span>
-     <span>${firstCard.doRotate ? firstCard.attribute : firstCard.ingredient}</span>
-     <span>${firstCard.doRotate ? firstCard.attribute : firstCard.ingredient}</span> -->
     </div>
     `);
 
