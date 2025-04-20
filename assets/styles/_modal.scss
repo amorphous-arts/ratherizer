@@ -1,0 +1,99 @@
+@use "sass:map";
+@use "sass:color";
+
+$share-icons: (
+        'btn-share-reddit' : ('file': 'reddit-alien-brands', 'color': #ff4500),
+        'btn-share-facebook' : ('file': 'facebook-f-brands', 'color': #3b5998),
+        'btn-share-x' : ('file': 'x-twitter-brands', 'color': #000),
+        'btn-share-whatsapp' : ('file': 'whatsapp-brands', 'color': #25d366),
+);
+
+.modal {
+  background: #212121;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  left: 50%;
+  padding: 50px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  box-shadow: 0 0 20px #000000c2;
+
+  hr {
+    width: 100%;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  textarea {
+    background: black;
+    border: 1px solid rgba(195, 195, 195, 0.34);
+    border-radius: 5px;
+    color: white;
+    height: 5rem;
+    padding: 10px;
+    resize: none;
+    width: calc(100% - 20px);
+  }
+
+  .wrapper-share-icons {
+    display: flex;
+    gap: 1.4rem;
+  }
+
+  // todo add share-btn class
+  .btn-share {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 30px;
+
+    &#btn-share-facebook {
+      background-size: 30%;
+    }
+
+    @each $id, $data in $share-icons {
+      &##{$id} {
+        background-image: url("/assets/img/fa/#{map.get($data, 'file')}.svg");
+        background-color: map.get($data, 'color');
+      }
+    }
+  }
+
+  #btn-close {
+    cursor: pointer;
+    height: 1.5rem;
+    position: absolute;
+    width: 1.5rem;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+
+    &:after {
+      display: inline-block;
+      content: "\00d7";
+    }
+  }
+
+  #btn-copy {
+    background: #cf4bac url('/assets/img/fa/paste-regular.svg') no-repeat .5rem center / 30%;
+    padding: 10px 10px 10px 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    float: right;
+    margin-top: 1em;
+
+    &:hover {
+      background-color: color.adjust(#cf4bac, $lightness: 10%);
+    }
+  }
+}

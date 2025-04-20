@@ -20,6 +20,7 @@ export const addStats = async(meal: Meal) => {
     firstToken: meal.firstContextToken,
     secondToken: meal.secondContextToken,
     rotates: [meal.mealDescriptions[0].doRotate, false, meal.sides[0].doRotate, false],
+    timestamp: new Date().toISOString(),
   };
 
   addDoc(collection(db, 'stats'), stat); // this can happen in the background

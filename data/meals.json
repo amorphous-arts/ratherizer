@@ -59,6 +59,10 @@
         {
             "descriptor": "Haggis",
             "uuid": "0677b571-679e-412a-a674-1cec6a9f2027"
+        },
+        {
+            "descriptor": "Peking Duck",
+            "uuid": "b0806933-0369-4c42-b00a-60491cf9701b"
         }
     ],
     "not_stuffed": [
@@ -189,10 +193,6 @@
         {
             "descriptor": "Century Egg",
             "uuid": "dd7f14c9-f0da-4e42-907c-7bbe8aaaf978"
-        },
-        {
-            "descriptor": "Peking Duck",
-            "uuid": "b0806933-0369-4c42-b00a-60491cf9701b"
         },
         {
             "descriptor": "Gelato",

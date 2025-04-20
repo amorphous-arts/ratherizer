@@ -1,11 +1,13 @@
 import '../assets/styles/style.scss';
 import {Meal as MealTemplate} from "./templates/meal";
+import {ShareModal} from "./templates/share/modal";
 import {Meal} from "./Entity/meal";
 import btn from "./templates/btn";
 import seperator from "./templates/seperator";
 import {getRandomIngredients, getRandomMeals} from "./database/fetch";
 import {addStats} from "./database/insert";
 import {addFartSound} from "./gamification/fart";
+import {ShareData} from "../../Entity/share-data";
 
 const gameContainer = document.querySelector('.game-container');
 
@@ -53,9 +55,10 @@ const mealChoices = async () => {
 
 const chooseMealTrigger = (chooseMealBtn: HTMLAnchorElement, meal: Meal) => {
   chooseMealBtn.addEventListener('click', async (e: MouseEvent) => {
+    e.preventDefault();
+
     const parent = (e.target as HTMLElement).parentNode;
     const siblings = document.querySelectorAll(`.game-container > *:not(#${parent.id})`);
-
     const hideElems = (className: string) => {
       siblings.forEach(sib => sib.classList.add(className));
       e.target.classList.add(className);
@@ -87,15 +90,17 @@ function clickPlayAgain(): void {
 function share() {
   const mealText = [...document.querySelectorAll('.meal-container:not(.hide) .meal-string *')].map(x => x.innerText).join(' ').replace(/\s+/, ' ')
 
-  const data = {
+  const data: ShareData = {
     title: 'Ratherizer',
     text: `I'd rather eat ${mealText}. What would you rather eat?`,
     url: location.href
   };
 
   if(typeof navigator.canShare !== 'function' || !navigator.canShare(data)) {
-    navigator.clipboard.writeText(`${data.text} ${data.url}`);
-    alert('Copied result to clipboard'); // todo make this pretty
+    const modal = new ShareModal(data);
+    document.body.appendChild(modal.render());
+    modal.afterInsert();
+
   } else {
     navigator.share(data);
   }

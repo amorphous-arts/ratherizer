@@ -1,3 +1,4 @@
+@use "modal.scss";
 @import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
 
 $primary: #9d4384;
@@ -10,20 +11,41 @@ $primary: #9d4384;
   display: none !important;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .game-container {
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 80vh;
-  row-gap: 1rem;
-  transition: 0.5s;
-  max-width: 1200px;
-  margin: auto;
   background: rgba(152, 111, 52, 0.45);
-  padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 16px #0006;
+  display: flex;
+  flex-direction: column;
+  font-size: .9rem;
+  justify-content: center;
+  margin: auto;
+  max-width: 1200px;
+  min-height: 80vh;
+  padding: 20px;
+  row-gap: 1rem;
+  transition: 0.5s;
+
+  @for $i from 1 through 4 {
+    $child-index: $i * 2;
+    &:has(#meal-1-container > .row:nth-child(1) > div:nth-child(#{$child-index}):empty):has(#meal-2-container > .row > div:nth-child(#{$child-index}):empty) {
+      .meal-container > .row > div:nth-child(#{$child-index}) {
+        display: none;
+      }
+    }
+  }
 
   .meal-container {
     display: flex;
@@ -55,8 +77,13 @@ $primary: #9d4384;
         }
       }
 
+      & > * {
+        margin: auto;
+      }
 
-      &:nth-child(2) {
+      &.meal-string {
+        text-shadow: 0 0 11px rgba(0, 0, 0, 0.8);
+        text-align: center;
         color: white;
         justify-content: space-evenly;
 
@@ -64,14 +91,14 @@ $primary: #9d4384;
           display: block;
           text-align: center;
         }
-      }
 
-      & > * {
-        margin: auto;
-      }
+        & > span {
+          flex: 1 1 0;
 
-      .meal-string {
-        text-shadow: 0 0 11px rgba(0,0,0,0.8);
+          &:nth-child(even) {
+            flex: .34 .34 0;
+          }
+        }
       }
 
       .context-token-container:empty {
@@ -93,11 +120,15 @@ $primary: #9d4384;
     padding: 10px 0;
     text-align: center;
     transition: 0.5s;
-    width: 170px;
+    width: 11em;
+
+    @media screen and (max-width: 1200px) {
+      width: 9em;
+    }
 
     h3 {
       color: #e0dbd2;
-      font-size: 18px;
+      font-size: 1.125em;
       font-weight: 600;
       margin: 0;
       padding: 5px;
@@ -119,7 +150,7 @@ $primary: #9d4384;
   }
 
   .content.card-item p {
-    font-size: 16px;
+    font-size: 1em;
   }
 
   .card, .attr-data, .ing-data, .base-data {
@@ -149,10 +180,9 @@ $primary: #9d4384;
 
   .ingredient-container {
     perspective: 600px;
+    position: relative;
     transform-style: preserve-3d;
     transition: .5s;
-    position: relative;
-    width: 180px;
 
     &:hover > .card {
       border-color: $primary;
@@ -201,7 +231,7 @@ $primary: #9d4384;
     width: 50px;
 
     span {
-      font-size: 11px;
+      font-size: 0.6875rem;
       line-height: 16px;
       text-align: center;
     }
@@ -219,10 +249,10 @@ $primary: #9d4384;
     align-self: center;
     background: white;
     border-radius: 4px;
-    box-shadow: 3px 3px 8px rgba(0,0,0,0.8);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
     color: #532127;
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding: 1rem;
     text-decoration: none;
     transition: .5s;
@@ -263,7 +293,7 @@ $primary: #9d4384;
 
     span {
       color: lightgray;
-      font-size: 20px;
+      font-size: 1.25em;
     }
 
   }
@@ -276,7 +306,7 @@ $primary: #9d4384;
 
   .meal-analytics p {
     color: white;
-    font-size: 30px;
+    font-size: 1.875em;
     justify-content: center;
     padding: 40px 0 10px 0;
     text-align: center;

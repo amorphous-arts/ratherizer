@@ -26,6 +26,7 @@ export class StaticCardCollection<T extends Card> implements CardCollection<T> {
     const newCard = this.cards[key].splice(index, 1)[0];
     const instance = CardFactory.print<T>(newCard, this.group as string);
 
+    instance.doRotate = false;
     instance.category = key;
 
     return Promise.resolve(instance);

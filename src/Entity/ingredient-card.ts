@@ -14,6 +14,7 @@ export class IngredientCard implements Card {
     },
     public readonly uuid: string
   ) {
+
   }
 
   get order(): number {
