@@ -98,7 +98,7 @@ function share() {
 
   if(typeof navigator.canShare !== 'function' || !navigator.canShare(data)) {
     const modal = new ShareModal(data);
-    document.body.appendChild(modal.render());
+    gameContainer.appendChild(modal.render());
     modal.afterInsert();
 
   } else {
