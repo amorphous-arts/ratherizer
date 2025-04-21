@@ -41,7 +41,7 @@ $primary: #9d4384;
   @for $i from 1 through 4 {
     $child-index: $i * 2;
     &:has(#meal-1-container > .row:nth-child(1) > div:nth-child(#{$child-index}):empty):has(#meal-2-container > .row > div:nth-child(#{$child-index}):empty) {
-      .meal-container > .row > div:nth-child(#{$child-index}) {
+      .meal-container > .row > :nth-child(#{$child-index}) {
         display: none;
       }
     }
