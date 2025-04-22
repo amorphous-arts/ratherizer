@@ -90,8 +90,9 @@ function clickPlayAgain(): void {
 function share() {
   const mealText = [...document.querySelectorAll('.meal-container:not(.hide) .meal-string *')].map(x => x.innerText).join(' ').replace(/\s+/, ' ')
 
+  // determine if the user is on mobile
+
   const data: ShareData = {
-    title: 'Ratherizer',
     text: `I'd rather eat ${mealText}. What would you rather eat?`,
     url: location.href
   };
@@ -102,7 +103,16 @@ function share() {
     modal.afterInsert();
 
   } else {
-    navigator.share(data);
+    const isMobile = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    // on desktop, combine the text and url cause browsers do funny things if both are passed
+    if(!isMobile) {
+      navigator.share({
+        text: `${data.text} ${data.url}`,
+      });
+    } else {
+      navigator.share(data);
+    }
   }
 }
 
