@@ -38,15 +38,6 @@ $primary: #9d4384;
   row-gap: 1rem;
   transition: 0.5s;
 
-  @for $i from 1 through 4 {
-    $child-index: $i * 2;
-    &:has(#meal-1-container > .row:nth-child(1) > div:nth-child(#{$child-index}):empty):has(#meal-2-container > .row > div:nth-child(#{$child-index}):empty) {
-      .meal-container > .row > :nth-child(#{$child-index}) {
-        display: none;
-      }
-    }
-  }
-
   .meal-container {
     display: flex;
     flex-direction: column;

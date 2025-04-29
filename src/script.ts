@@ -92,27 +92,18 @@ function share() {
 
   // determine if the user is on mobile
 
+  const isMobile = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   const data: ShareData = {
-    text: `I'd rather eat ${mealText}. What would you rather eat?`,
+    text: `I'd rather eat ${mealText}. What would you rather eat? #glasserole #wouldyouratherizer`,
     url: location.href
   };
 
-  if(typeof navigator.canShare !== 'function' || !navigator.canShare(data)) {
+  if(!isMobile || typeof navigator.canShare !== 'function' || !navigator.canShare(data)) {
     const modal = new ShareModal(data);
     gameContainer.appendChild(modal.render());
     modal.afterInsert();
-
   } else {
-    const isMobile = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-    // on desktop, combine the text and url cause browsers do funny things if both are passed
-    if(!isMobile) {
-      navigator.share({
-        text: `${data.text} ${data.url}`,
-      });
-    } else {
-      navigator.share(data);
-    }
+    navigator.share(data);
   }
 }
 
