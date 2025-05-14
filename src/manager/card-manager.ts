@@ -8,7 +8,7 @@ import Random from "../util/random.js";
 // Card_2 = after the base meal
 const keys = {
   'base_meal': ['stuffed', 'not_stuffed'],
-  'Card_1': ['stuffed', 'topped'],
+  'Card_1': ['extras', 'drinks', 'stuffed', 'topped'],
   'Card_2': ['drinks', 'topped', 'sides', 'extras']
 }
 
@@ -22,13 +22,12 @@ export default class CardManager<T extends Card> {
   }
 
   getIngredients = async (): Promise<T[]> => {
-    const key = this.getRandomKey();
-    const ingredient1 = await this.collection.getIngredient<T>(key);
+    const ingredient1 = await this.collection.getIngredient<T>(this.getRandomKey());
     ingredient1.doRotate = Random.randomInclusive(0, 1) === 1;
 
     return [
       ingredient1,
-      await this.collection.getIngredient<T>(key),
+      await this.collection.getIngredient<T>(this.getRandomKey()),
     ].sort((a, b) => a.order - b.order);
   }
 

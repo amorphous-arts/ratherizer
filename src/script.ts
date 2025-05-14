@@ -32,6 +32,10 @@ const mealChoices = async () => {
     ing[1][1]
   );
 
+  const e = JSON.parse(localStorage.getItem('provided_meals') || '[]');
+  e.push([meals.meal1, meals.meal2]);
+  localStorage.setItem('provided_meals', JSON.stringify(e));
+
   const mealHtml = (meal: Meal, id: string, btnText: string): HTMLDivElement => {
 
     const wrapper = document.createElement('div');
