@@ -63,13 +63,21 @@
         {
             "descriptor": "Peking Duck",
             "uuid": "b0806933-0369-4c42-b00a-60491cf9701b"
-        }
-    ],
-    "not_stuffed": [
+        },
         {
             "descriptor": "Stuffed Shells",
             "uuid": "754717a1-85b0-479e-9888-c5a82f76fe4d"
         },
+        {
+            "descriptor": "Beaver Tail",
+            "uuid": "ecfbf5b2-dd39-4b6e-a6a7-38c59612f981"
+        },
+        {
+            "descriptor": "Fermented Shark",
+            "uuid": "90694812-b5d8-4fd2-a0b3-fbdbf5b262de"
+        }
+    ],
+    "not_stuffed": [
         {
             "descriptor": "Top Ramen",
             "uuid": "86b132fd-ce6a-4aed-a2ba-68d11d3d589c"
@@ -223,10 +231,6 @@
             "uuid": "33af7875-16de-45e3-a107-b51d49c6c47b"
         },
         {
-            "descriptor": "Beaver Tail",
-            "uuid": "ecfbf5b2-dd39-4b6e-a6a7-38c59612f981"
-        },
-        {
             "descriptor": "Borscht",
             "uuid": "5e72f8c8-14bd-450b-8d0e-38a6be387e53"
         },
@@ -249,10 +253,6 @@
         {
             "descriptor": "Bibimbap",
             "uuid": "e3d2d3ee-6e1f-4be1-ae12-5773598c25c8"
-        },
-        {
-            "descriptor": "Fermented Shark",
-            "uuid": "90694812-b5d8-4fd2-a0b3-fbdbf5b262de"
         },
         {
             "descriptor": "Bread",
