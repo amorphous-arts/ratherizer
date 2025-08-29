@@ -82,8 +82,8 @@ const chooseMealTrigger = (chooseMealBtn: HTMLAnchorElement, meal: Meal) => {
       share();
     });
 
-    gameContainer.appendChild(shareBtn);
     gameContainer.appendChild(playAgain);
+    gameContainer.appendChild(shareBtn);
   });
 }
 

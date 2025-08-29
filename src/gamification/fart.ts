@@ -9,7 +9,7 @@ export function addFartSound() {
 
   document.addEventListener('mouseover', (e: MouseEvent) => {
     if((e.target as HTMLElement).classList.contains('ingredient-container')) {
-      audio.volume = 0.15
+      audio.volume = 0.8
       audio.play();
     }
   });
