@@ -1,0 +1,2102 @@
+[
+    {
+        "ingredient": "Unpasteurized Milk",
+        "attribute": "Lumpy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "cf232306-a4e9-4edf-bbed-7899bc7afbe4",
+        "category": "drinks"
+    },
+    {
+        "ingredient": "A Quarter Teaspoon of Bleach",
+        "attribute": "Non-Lethal",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "14e2ff17-db39-4f38-a774-68f73a1fe72e",
+        "category": "drinks"
+    },
+    {
+        "ingredient": "Steaming Cud",
+        "attribute": "Pre-Chewed",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "ab93c6e7-2aba-4d2c-8817-d4b3f248cbc5",
+        "category": "drinks"
+    },
+    {
+        "ingredient": "Beaver Anal Gland Juice",
+        "attribute": "Raspberry Flavored",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "71ccef23-888a-458f-8be7-4e380908f124",
+        "category": "drinks"
+    },
+    {
+        "ingredient": "Platypus Milk",
+        "attribute": "Venomous",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "9925b753-e6b7-49e5-a0f9-5e3859fada2f",
+        "category": "drinks"
+    },
+    {
+        "ingredient": "Gravy?",
+        "attribute": "Fermented",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "cf1c2b9d-7feb-4f24-924d-c67132a5e515",
+        "category": "topped"
+    },
+    {
+        "ingredient": "Headcheese",
+        "attribute": "Human",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "60710d6e-ea2b-4d3a-a6da-21d85edb4da4",
+        "category": "topped"
+    },
+    {
+        "ingredient": "Lamb Sauce",
+        "attribute": "Gloopy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "4f0a19a4-045d-4d0d-b695-a40477989e57",
+        "category": "topped"
+    },
+    {
+        "ingredient": "Foot Cheese",
+        "attribute": "Home Grown",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "62400311-f68b-4834-8675-fce88551e4c4",
+        "category": "topped"
+    },
+    {
+        "ingredient": "Rock-It Sauce\u2122",
+        "attribute": "Sold Out",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "5db92dd9-0ae4-48df-8ba3-485e6fb5ace5",
+        "category": "topped"
+    },
+    {
+        "ingredient": "Claw Meat",
+        "attribute": "Spongey",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "9c8a68cb-d11f-4473-a9b8-a0c0df91a1c1",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "School Lunch Mystery Meat",
+        "attribute": "Slithering",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "2f7697c7-c7a7-4f19-a974-0bcb96129956",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Sea Turtle Meat",
+        "attribute": "Endangered",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "2f68ffac-6e8d-4d2f-9445-568b9cb51eaa",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Crocodile Meat",
+        "attribute": "Aggressive",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "75cc49c7-53b0-46ad-b688-0e6d396249b0",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Leopleurodon Meat",
+        "attribute": "Magical",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "dc158db9-ab2a-4a22-886d-9d03d0334ae9",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Manatee Meat",
+        "attribute": "Medium Rare",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "0871fdac-3d74-479a-9c9c-a0fe37099a75",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Clown Meat",
+        "attribute": "That Tastes Kinda Funny",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "e7b2d545-55f5-40cd-8e0e-99663401df41",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Hamburger Meat",
+        "attribute": "RAW",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "05818b8a-d254-4c78-af78-23b8b5079aef",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Dark Meat",
+        "attribute": "Juicy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "63c2d03b-0798-4867-9d83-db9313c90441",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Monkey Brains",
+        "attribute": "Curdled",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "ec2ca0dc-2735-44cf-8dce-5425a90c8b67",
+        "category": "extras"
+    },
+    {
+        "ingredient": "90's Neon Condiments",
+        "attribute": "Unctuous",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "476d9211-eeb4-48fc-9840-883a6cbb72db",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Orbeez",
+        "attribute": "Fully Hydrated",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "e9e499e8-9367-43f7-9694-0c1c8fdfb96a",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Bill Cosby's Leftover Puddin'",
+        "attribute": "Putrid",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "c430aa41-66a3-4d51-815e-7918b4f9f2ab",
+        "category": "extras"
+    },
+    {
+        "ingredient": "A Handful of Silver Dragees",
+        "attribute": "Mechanical",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "b5ead66c-ad8c-4609-b56b-91cea1ed8d2c",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Yellow Snow",
+        "attribute": "Acidic",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "1814c54a-72bb-4418-8dd3-4ee217f0adfc",
+        "category": "extras"
+    },
+    {
+        "ingredient": "A Gram of Skin Flakes",
+        "attribute": "Dessicated",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "ddeb7baa-4f71-4f40-b970-d23bb1143e01",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Pre-Cooked Dino Nuggets",
+        "attribute": "Nutritionally Fortified",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "061b975e-f157-44a8-92b2-3d5238f9d3a6",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Fred Durst's Autograph",
+        "attribute": "Pustulent",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "bac967fc-85c6-4eb3-9797-1e664ce9cfcc",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Rat Shit",
+        "attribute": "Adorable",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "bb2156d7-64fa-4d0f-9e6e-c46450912747",
+        "category": "extras"
+    },
+    {
+        "ingredient": "A Drawer Full of Outdated Computer Cables",
+        "attribute": "Vibrating",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "aac8d7f2-d26a-4a9e-b044-9827a2b9b331",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Pencil Shavings",
+        "attribute": "Dusty",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "bd770069-2b31-4204-9984-e5dfc7ccc019",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Unpeeled Shrimp",
+        "attribute": "Crunchy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "03dea02d-66bc-4da3-932c-7ccc7f948b60",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Sea Cucumber",
+        "attribute": "Singing",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "d3fde9cf-74fc-46cb-814f-2283d01763c7",
+        "category": "extras"
+    },
+    {
+        "ingredient": "The Cool S",
+        "attribute": "Crusty",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "6bda014d-44e3-457d-9bd4-2ea4df56fca0",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Dolphin Filet",
+        "attribute": "Occulated",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "19edb101-071b-421a-bebc-0990540f4cf0",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Elephant Ears",
+        "attribute": "Plastic",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "89bc0ac2-7a3d-4df4-9b8b-027b1f0c505a",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Bangers",
+        "attribute": "Hissing",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "e5d42b7a-f11e-406c-b9ef-b8809b8e18b1",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Rocky Mountain Oysters",
+        "attribute": "Bumpy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "8758ae3a-9784-468a-8025-1702818936e4",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Jerked Goat",
+        "attribute": "Tenderized",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "505f8cb8-b814-49ac-96ae-9e43d2d3c17b",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Ox Tails",
+        "attribute": "Freshly Peeled",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "9c655e70-ff17-4b4b-ac7e-c5d00e2b13cf",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Elk Penis",
+        "attribute": "Veiny",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "9ac6cdbb-f53d-457c-b85e-08c3309f68c4",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Cotton Candy",
+        "attribute": "Undulating",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "65e907fb-c0e2-4dfa-b431-22980fc1cda2",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Lutefisk",
+        "attribute": "Rotten",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "d84ad1aa-7970-461f-87a2-6fc799447e55",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Wasabi",
+        "attribute": "With 2.3 Million Scoville Units",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "1375e3ac-b020-4c65-bfac-d9bd342b3bed",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Broken Glass",
+        "attribute": "Radioactive",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "2c982f31-61ac-49b0-9058-f1f909c45fea",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Seal Eyes",
+        "attribute": "Baby",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "d9f8ded4-4240-4398-8755-46240fe4fc0c",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Grandma's Ashes",
+        "attribute": "Burnt",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "e80ea500-3d91-4044-a859-c431df6b7ab3",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Anchovies",
+        "attribute": "Hairy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "7c008cb2-46e6-483b-bcaa-e7f542f60b81",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Donald Trump's Diarrhea",
+        "attribute": "Red",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "1b5ac18d-5ed6-4d8d-8f7d-cb9fd3d18aaa",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Bernie Sanders's Diarrhea",
+        "attribute": "Left-Leaning",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "ded1e1ea-06da-4a9d-8e2a-784996ef5bea",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Graphite",
+        "attribute": "Powdered",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "6fb3bd05-d8ff-4d5f-b62e-dbed8d19490f",
+        "category": "extras"
+    },
+    {
+        "ingredient": "A Used Condom",
+        "attribute": "That's Been Lying on Hot Blacktop For 5 Weeks",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "a98cfa2c-4a20-4e9b-a000-451dfd32eb9c",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Water",
+        "attribute": "Soaking Wet",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "1cf07f04-0109-4e6f-8893-f215f43f2bdc",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Onions",
+        "attribute": "Caramelized",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "e4a5980a-87db-4c34-8730-ec8d148a582e",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Avocado",
+        "attribute": "Toasted",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "b4c9bf1b-7020-4650-a70e-589441339e30",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Celery",
+        "attribute": "Bitter",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "a77896ff-8aff-4567-840e-898491fb000c",
+        "category": "extras"
+    },
+    {
+        "ingredient": "The Literal Blood of Jesus",
+        "attribute": "Full of Holes",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "625512e8-c88f-47fa-9319-bddd091f1cf5",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Dog Saliva",
+        "attribute": "Super Clean",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "1e8e7c4c-3c5f-41f0-bb44-45ea4aad32ff",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Big, Plump Crickets",
+        "attribute": "Chitinous",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "e72bb300-7e45-4f06-a57a-97c25d314ab5",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Tapeworm Eggs",
+        "attribute": "Regurgitated",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "35af7c21-9f6f-44cf-ad9f-a901726c16f3",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Slurpee\u2122",
+        "attribute": "Multi-Flavored",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "4052f302-d098-437e-842c-4055a3a76a55",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Army Soldiers",
+        "attribute": "Fully Sentient",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "67049204-bfe7-4af7-a47a-898d3cbb8d44",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Grapes",
+        "attribute": "Unpeeled",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "5cd6d676-72b3-4fee-9159-a32fc7c05cd6",
+        "category": "extras"
+    },
+    {
+        "ingredient": "A Prom Punch Bowl",
+        "attribute": "Spiked",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "bf848528-eb03-467a-b272-2210f9b833cb",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Stop & Shop\u2122 Sushi",
+        "attribute": "One Week Old",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "651106d1-d70c-4bad-8427-c448829b84bc",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Human Flesh",
+        "attribute": "Seared",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "98fadeea-745a-4bcb-9deb-811c53f3c576",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Chicken Eggs",
+        "attribute": "Medium Well",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "79165594-c433-4629-8992-02a700cd433e",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Ox Cheeks",
+        "attribute": "Braised",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "4d659b43-c491-4387-a48c-59aed281b1c0",
+        "category": "extras"
+    },
+    {
+        "ingredient": "An Edible Replica of The Declaration of Independence",
+        "attribute": "Patriotic",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "5ddd8d89-0bd6-47c1-b2cd-4f334f1eb7e6",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Bamboo Skewers",
+        "attribute": "Charred",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "3970e20c-0ac3-495e-8b7b-76a7a0d335a9",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Kiwi",
+        "attribute": "Rare",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "d0444b26-187b-4b26-aed6-77ab29df5998",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Banana",
+        "attribute": "Non-GMO",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "dbd25297-8ea8-439e-9fea-1c1b28fd5053",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Leaves",
+        "attribute": "Dry",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "451fb346-1a2f-43b6-b921-16233b213e05",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Bellybutton Lint",
+        "attribute": "Fluffy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "f3430080-2d74-4fbc-bf40-3e830b16a66f",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Heroin",
+        "attribute": "From a Syringe 7 Other People Just Shared",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "7ce92bd9-078e-49ac-a025-fbfa4c6d2083",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Broccoli Rabe",
+        "attribute": "Fiberous",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "4132217d-e52e-4a41-9d83-e91edfc671ba",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Potato Skins",
+        "attribute": "That was Buried For a Year",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "6d89f25a-85e2-4093-b1cc-554f3cac921d",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Cannabis ",
+        "attribute": "Sticky-Icky-Icky",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "a0d0aa2e-4931-4d37-8b2a-9c97c6ac7ed1",
+        "category": "extras"
+    },
+    {
+        "ingredient": "A Tiny MAGA Hat",
+        "attribute": "Starched",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "dedc37de-6cb8-41a0-b4c9-67fab98d8779",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Poutine",
+        "attribute": "Canadian",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "9b20c7a4-bd00-421a-ac70-f8e5dbb17c48",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Salt & Pepper",
+        "attribute": "Served by Salt N' Peppa\u2122",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "e8ad000e-d731-4170-b7ec-78940b70ff88",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Parsley",
+        "attribute": "Decorative",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "090d90d4-8734-4055-8b54-535adab85def",
+        "category": "extras"
+    },
+    {
+        "ingredient": "System of a Down's Worst Album",
+        "attribute": "Mysterious",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "fba45c24-5cfd-4747-b651-ab62d240725b",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Dihydrogen Monoxide",
+        "attribute": "Deadly",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "d055f929-1413-49c0-95b3-8512057509fc",
+        "category": "extras"
+    },
+    {
+        "ingredient": "The Cats, The Dogs, The Pets of The People Who Live There",
+        "attribute": "Fictional",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "802cb599-20f0-4d43-932c-c73baf16128b",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Cheez-Its\u2122",
+        "attribute": "Addictive",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "0943b410-9d49-46ff-af96-25ad0aeadfa1",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Mini Marshmallows",
+        "attribute": "Toasted",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "d69c7b2b-7b4e-45fe-aa74-4165eac22cb4",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Fetus",
+        "attribute": "Aborted",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "7066d066-5be1-43ea-8a10-c6dbcb5a595d",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Peas",
+        "attribute": "Canned",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "cd3b7776-d7cb-42e8-a39c-8525a589fcd1",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Everything",
+        "attribute": "On The Cob",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "5f8bcf21-e85d-40f6-95d2-781d4a12c40d",
+        "category": "extras"
+    },
+    {
+        "ingredient": "This Weeks Underwear",
+        "attribute": "Saturated",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "33671bac-8386-417c-8ceb-35f67dc18f62",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Dirt",
+        "attribute": "Ground",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "4e2eb0f9-53e2-4468-9eaa-377f933fc7dd",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Phlegm",
+        "attribute": "Bubbly",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "88ad3f30-8790-42a8-bd7a-a3eda12ac965",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Ferret Skin",
+        "attribute": "Leathery",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "729a2845-063f-424e-9f0b-1d3ad1b34016",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Arnold Swarzeneggar's Sweat",
+        "attribute": "Invigorating",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "4b6f21aa-b07a-4deb-b1be-b0c5501ee7ea",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Gold Flakes",
+        "attribute": "Youth-Restoring",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "7eb58af8-9ffb-43be-b46e-36319c9cd3f8",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Socks",
+        "attribute": "Sweaty",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "200140f6-94a8-4f3e-93e3-28bfd38001bf",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Neurons",
+        "attribute": "Rapidly Communicating",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "f18c7d27-8147-4d2d-a12f-75be26f83582",
+        "category": "extras"
+    },
+    {
+        "ingredient": "A Random Illogical Non-Repeating Number",
+        "attribute": "In Alphabetical attributeOrder",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "e957f45d-f1e1-44ab-846d-0b8dbf56d863",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Monster Blood",
+        "attribute": "Incrementally Growing",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "6c7a1492-2a77-4077-bc59-1ae500143714",
+        "category": "extras"
+    },
+    {
+        "ingredient": "That Dog That Became a Venereal Disease",
+        "attribute": "Single-Celled",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "a3f61eda-89e2-457e-9b30-5c68118ad04b",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Mysterious Liquid",
+        "attribute": "Liquified",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "322ed8c9-690b-4e98-98d8-fbf82cd3d9e1",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Bits of Chewed-up Cuticle Skin",
+        "attribute": "Anxiety-Inducing",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "35f68bcf-d25c-42e3-9e60-8e0fc6435753",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Surstr\u00f6mming",
+        "attribute": "Boneless",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "c635848d-4367-491b-9a93-c924c94dd63b",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Milk and Cereal",
+        "attribute": "Sour",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "b87798b6-c2d8-4e25-a7e4-4c3757d2b9aa",
+        "category": "drinks"
+    },
+    {
+        "ingredient": "Nautical Themed Craft Beer",
+        "attribute": "Pretentious",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "ff942e5f-995d-4a0a-8b9c-22a6de4fe90d",
+        "category": "drinks"
+    },
+    {
+        "ingredient": "Steamed Carrots",
+        "attribute": "Extremely Firm",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "c07e72b3-95cf-41b3-8e25-fb2a25594ee0",
+        "category": "drinks"
+    },
+    {
+        "ingredient": "Whole Milk",
+        "attribute": "Expired",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "aaf1f19f-3731-4592-8fad-3f769c092d7d",
+        "category": "drinks"
+    },
+    {
+        "ingredient": "Baking Soda",
+        "attribute": "Basic",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "3a4aead2-03f3-43c6-80da-a0a2a3be3050",
+        "category": "drinks"
+    },
+    {
+        "ingredient": "Black Licorice",
+        "attribute": "Licorice-Flavored",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "cc2f7b73-5306-44dc-a5ee-969d6c5c956a",
+        "category": "sides"
+    },
+    {
+        "ingredient": "Thrice Used Frying Grease",
+        "attribute": "From A KFC\u2122 Dumpster",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "3ed42567-f9d3-4880-9e2a-599620f919a8",
+        "category": "sides"
+    },
+    {
+        "ingredient": "Kale From an Old Salad Bar",
+        "attribute": "Fuzzy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "5c6d9ef8-b1d9-4463-9ebd-458727b87ab6",
+        "category": "sides"
+    },
+    {
+        "ingredient": "Seasoned Curly Fries",
+        "attribute": "Small",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "b98ce291-b50f-47dc-b729-f9b3569173c3",
+        "category": "sides"
+    },
+    {
+        "ingredient": "Gravy",
+        "attribute": "Oily",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "5745f92b-22c6-4dd7-9a62-c905dadd5143",
+        "category": "topped"
+    },
+    {
+        "ingredient": "Clam Sauce",
+        "attribute": "Briney",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "25435b80-2e73-4ad5-8593-056ab0cc912e",
+        "category": "topped"
+    },
+    {
+        "ingredient": "Toenail Parmesan Cheese",
+        "attribute": "Grated",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "a09ee706-30d8-4a33-80ca-e736d59c84aa",
+        "category": "topped"
+    },
+    {
+        "ingredient": "Whipped Cream",
+        "attribute": "Consisting of 99% Air",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "62b044a5-4da6-4451-8136-0b20d1d2a101",
+        "category": "topped"
+    },
+    {
+        "ingredient": "Cream Cheese",
+        "attribute": "Melted",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "d478810c-cd6c-4ffd-b29a-fdac56e18c9a",
+        "category": "topped"
+    },
+    {
+        "ingredient": "Cheap Gyro Meat",
+        "attribute": "Freezer-Burned",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "eb0ff4a6-50c1-43d4-8187-366489334171",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Baked Beans",
+        "attribute": "Undercooked",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "f9d8a9f1-6cc5-4421-b4ea-324e8be24a43",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Albino Alligator Meat",
+        "attribute": "Lucky",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "8939cfc3-3ae9-4e4d-b4c7-0569b210860d",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Dragon Meat",
+        "attribute": "Mythical",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "98f925c1-04e3-436f-a6dc-21a6e467c889",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Green Beans",
+        "attribute": "That Inadvertedly Caused a War Crime",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "c665cd33-e5f2-4058-981c-2bcdc4b82346",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "All-White Meat Chicken Breast",
+        "attribute": "Extra Well Done",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "101d9357-5526-4941-8124-e3e78a53d26c",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Breakfast sausages",
+        "attribute": "Drowned in Maple Syrup",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "efdd61fd-3088-4562-aca2-f0496c11ac35",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Mixed Veggies",
+        "attribute": "From the Clearence Section",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "bf75768f-df3c-456a-a8d5-7bafc8d387ab",
+        "category": "stuffed"
+    },
+    {
+        "ingredient": "Narwhal Bacon",
+        "attribute": "Blubbery",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "754d3417-fb30-4e5b-a6c0-70f1a7a74238",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Grill Scrapings",
+        "attribute": "Coagulated",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "7853b1e1-2503-41ed-8074-6baa2f9a0b11",
+        "category": "extras"
+    },
+    {
+        "ingredient": "The Last TMNT Pudding Pie",
+        "attribute": "Moldy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "db8fcb0f-280f-4c1c-a639-e2de341f6e97",
+        "category": "extras"
+    },
+    {
+        "ingredient": "One of Everything on The Taco Bell\u2122 Menu",
+        "attribute": "Americanized",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "c11e0885-a953-4f8e-a731-f9c190ce1794",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Chicken Head",
+        "attribute": "Shrieking",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "3ec75da0-fdd6-4507-b2aa-58a02184317e",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Baby Teeth From Grandma's House",
+        "attribute": "Cursed",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "6e57b524-7970-422b-b39d-caab089bd33b",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Gherkins",
+        "attribute": "Bleached",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "b294077d-0a37-47ea-a81e-3b942e3ec784",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Quail Eggs",
+        "attribute": "Hatching",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "f5b3132d-a42b-46cd-a732-51be72851bb8",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Weevils",
+        "attribute": "Swarming",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "45b9a390-a56d-453c-8d2e-9aa72a0c9135",
+        "category": "extras"
+    },
+    {
+        "ingredient": "A Hair Blob From The Shower Drain",
+        "attribute": "Mutated",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "d0b692d1-924c-48c6-a02e-115ec2ea8097",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Saw Dust",
+        "attribute": "Infested",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "ee59ee10-7182-4c8e-a4b1-6d8870e543c3",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Plastic Bits",
+        "attribute": "Fried",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "98246f68-c142-4873-905f-efb0d94447d3",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Jellyfish",
+        "attribute": "Gurgling",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "9d47ffee-ddc5-4353-8868-330faad90a89",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Urine Crystals",
+        "attribute": "From Concentrate",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "00ef6009-03f2-4556-b8a0-97ce1781b39b",
+        "category": "extras"
+    },
+    {
+        "ingredient": "An Eighth of Stems and Seeds",
+        "attribute": "Pickled",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "1841af48-2fd3-473e-ab04-0ef320326f6e",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Candy Corn",
+        "attribute": "Recycled",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "cee4a957-7815-480a-b36d-b5fdfd566f4a",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Foreskins",
+        "attribute": "Stretchy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "8c7bacad-937a-4628-8af0-333ee39f9b1b",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Ambergris",
+        "attribute": "Petrified",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "81ebd384-df3f-46d1-aeaa-7c776a0e15cc",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Fugu",
+        "attribute": "Obnoxiously Salty",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "cc93ce36-dcbb-4668-b4b5-0d09205d0cff",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Chicken Feet",
+        "attribute": "Pitter-Pattering",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "8d3fb3c9-0e20-4a17-b416-922608a24b8b",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Turkey Neck",
+        "attribute": "Dancing",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "f23d2cc5-d850-4ef2-bfee-8053a90a370f",
+        "category": "extras"
+    },
+    {
+        "ingredient": "96.9% Isopropyl Alcohol",
+        "attribute": "Fuming",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "72dce563-86c9-4869-a121-3f0653176b6f",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Bone Marrow",
+        "attribute": "Porous",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "2bafa336-c6de-4633-aaaa-343752077f09",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Placenta",
+        "attribute": "Gurgling",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "26c8f9d8-cca7-43cd-b7d9-465fbba1359a",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Braunschweiger",
+        "attribute": "Mealy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "5007197c-7b42-47c6-8ef2-08a55b0690a8",
+        "category": "extras"
+    },
+    {
+        "ingredient": "SPIDERS.",
+        "attribute": "Skittering",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "174420c8-c494-4007-8118-30ed1ac18efa",
+        "category": "extras"
+    },
+    {
+        "ingredient": "An Entire Denny's Grand Slam\u2122",
+        "attribute": "Quivering",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "632e9123-dd26-4798-8bb1-6a4d36ecabe3",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Mealworm-Infested Granola",
+        "attribute": "Cursed With Eternal Life",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "84d32f9e-4ec6-4109-896c-b3576a3e6650",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Honeydew (The Aphid Kind)",
+        "attribute": "Obnoxiously Sweet",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "c2aaa0e6-aa03-41b2-b877-e935b3f5e636",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Joe Biden's Diarrhea",
+        "attribute": "Blue",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "4eb8ea1c-50f8-4cb7-a681-535bd9a929cf",
+        "category": "extras"
+    },
+    {
+        "ingredient": "A Ground-Up Bic\u2122 Pen",
+        "attribute": "Gnawed-on",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "a0e9dc83-73b5-4488-a24b-88712f3ef85b",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Vegimite\u2122",
+        "attribute": "Anti-American",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "6dac49e0-d669-4331-9c44-79e92fa3fcd2",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Bits of a Badly Mildewed Ebony Porn Mag",
+        "attribute": "Musty-Smelling",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "56b70caa-75f9-4dd7-9c22-7c3c15c51913",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Cabbage",
+        "attribute": "Steamed",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "dbbedbe0-eba2-4941-a071-f35eceefbb75",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Broccoli",
+        "attribute": "Cheesy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "26c2a53b-4c4b-4282-a4fc-15e187203d2c",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Eggplant",
+        "attribute": "Pan Fried",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "d5486a54-b9d4-4eb7-82b7-d3fba5cc4f08",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Uhhh...",
+        "attribute": "Offensively Bland",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "04be9d9b-bfe2-4099-8f28-655e4e224988",
+        "category": "extras"
+    },
+    {
+        "ingredient": "The Literal Flesh of Jesus",
+        "attribute": "Aged",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "69339435-6c33-4f74-8075-2674648b00d9",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Piece of String",
+        "attribute": "Really Long",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "94749f33-033d-4228-8d93-f76198a38983",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Skittles",
+        "attribute": "That Have Been Under a Couch Cushion for 5 Years",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "781eb379-c6ee-46f8-91f3-5df33bc09598",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Construction Paper",
+        "attribute": "Of Various Colors",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "c42af547-a7b4-4bdb-87a3-4799738a33b1",
+        "category": "extras"
+    },
+    {
+        "ingredient": "A Rabbit",
+        "attribute": "That is of Age and Capable of Consent",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "0216492c-7474-418e-92b2-bbde98443a91",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Your Uncle's Backhanded Compliments",
+        "attribute": "Bearded",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "6561c9f4-eab0-434b-b458-5aad84b82d71",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Fully Engorged Ticks",
+        "attribute": "Bursting",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "dee95fbe-69b2-4667-bb07-253be46f7a11",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Tiny Spherical Magnets",
+        "attribute": "A Handful of",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "e274999f-0d62-41cf-af72-f9543c5ef217",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Face Skin",
+        "attribute": "That Fell Off The Back of A Truck",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "b3186b65-341e-4977-a841-11bf2d0a850c",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Just a Sprinkle of Cocaine",
+        "attribute": "Medium Done",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "4891fd1f-7aee-41c4-9ce7-71b42df78520",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Giant Hogweed",
+        "attribute": "Itch-Inducing",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "59cd460b-5b83-4f55-a88f-5e602a74a084",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Imitation Vanilla",
+        "attribute": "Cheap",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "d01da39c-de1b-485a-b20e-4d2bcef6eac3",
+        "category": "extras"
+    },
+    {
+        "ingredient": "The Antidote",
+        "attribute": "Slightly Toxic",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "737506a3-9cd2-4cba-9c5a-3f203eae4cbe",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Old Mop Bucket Water",
+        "attribute": "Dubiously Smelling",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "6203b1f4-4431-471c-b773-57de3222fc99",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Yesterday's Veal Stock",
+        "attribute": "Evil",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "f5cca618-9923-474f-bf01-4fbdd133016e",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Venus Flytrap",
+        "attribute": "Man-Eating",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "ff9d677a-e4fa-44fd-87b5-968003930c1d",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Lichen",
+        "attribute": "From Deep Inside of a Well",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "ae06e1e1-601d-4c72-8089-c4df687490b7",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Bong Water",
+        "attribute": "Resinous",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "3a8cb5ee-d43f-4e32-b4e0-d5b3d0bb7d2b",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Roots N' Tubers",
+        "attribute": "Dirty",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "de214a33-2fa8-4893-af4b-687c541677a2",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Bean Sprouts",
+        "attribute": "With Lots of Potential",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "b21a0734-24ad-4f68-a437-87a29f302b8c",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Bird Seed Mix",
+        "attribute": "Edible",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "f3f32a50-248a-4f04-a997-cab6a832d860",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Sandy Leeks",
+        "attribute": "Unwashed",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "b74ced0c-b129-4f92-a8f8-90935b6f1c9a",
+        "category": "extras"
+    },
+    {
+        "ingredient": "A Shot of Jack Daniel's\u2122",
+        "attribute": "In a Trailer Park Boys\u2122 Whiskey Glass",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "a81c0bc8-7e50-4bd8-93e4-28259d19695e",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Bacon",
+        "attribute": "Full of Trans Fats",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "51bbf74c-2302-433c-9037-9a7db425a52d",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Sewage",
+        "attribute": "Full of Splinters",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "fe68a723-ed37-4c7c-9fc1-5804b17c0e2c",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Cilantro",
+        "attribute": "Soapy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "ec4283dc-ffb9-4ae0-b362-97fa933d5410",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Lead Paint",
+        "attribute": "Surprisingly Sweet",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "8766a2e8-0955-45f1-be79-bd28f3146f32",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Toast",
+        "attribute": "Soggy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "547997fc-414d-4df0-8203-a28eeeaf51b3",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Hellman's\u2122 Mayonnaise",
+        "attribute": "Just Okay",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "a28dc749-5778-40c8-82e5-912d7b56d0d8",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Miracle Whip\u2122",
+        "attribute": "But It's Not What You Expect",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "7ac92c50-c124-4016-80ac-ccb0780eb878",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Browny Bites",
+        "attribute": "Cannabis-Infused",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "55967065-c317-4fa7-9a0f-e551cc3fed3a",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Cucumber",
+        "attribute": "Nearly Expired",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "c272a90a-3d42-43a1-b66d-f936ff3dc64d",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Corn",
+        "attribute": "Creamed",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "197b8295-50ea-433c-a202-72ab27f6ee5b",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Motor Oil",
+        "attribute": "From a Driveway Puddle",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "414cedcd-21ea-4ab0-9788-de3f0e662112",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Monkey's Paw",
+        "attribute": "Imbued with Dark Magic",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "56ac5ef5-0d07-4753-8ae2-82f5ab67014e",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Ghoul Flesh",
+        "attribute": "Feral",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "24253a09-d7fc-4988-ae07-ab64a5f71fa0",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Egg Whites",
+        "attribute": "With 200% Your Daily Recommended Calcium",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "3456ec0b-8708-4251-ae71-1f7398c65391",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Napkin",
+        "attribute": "Melt-In-Your-Mouth",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "06c47242-6bd8-4f9e-bf78-759d210fa4eb",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Adrenochrome",
+        "attribute": "With a Meth-Like Effect",
+        "attributeOrder": {
+            "ingredient": 0,
+            "attribute": 1
+        },
+        "uuid": "1103d92c-9649-4502-abbd-db9fb122df6d",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Corn Flakes\u2122",
+        "attribute": "Frosted",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "22d6d5cd-c353-48a2-a165-d01e7e764053",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Boogers",
+        "attribute": "Chewy",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "d63bd797-8583-4d17-b607-fea4137f71e7",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Mushrooms",
+        "attribute": "Eco-Friendly",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "b34061c7-ac10-4f13-b234-60bbe565c930",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Raw Zombie Liver",
+        "attribute": "Cooked",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "4e70ae69-6ce7-452d-ab05-98ec526b29bb",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Horsehair Worms",
+        "attribute": "Parasitic",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "f584fe20-8e5f-4de7-9002-2d0925844e04",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Gunpowder",
+        "attribute": "Explosive",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "dde28eb5-4326-4037-99a3-cc597a76c636",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Kyle Gass's Rock Star Semen",
+        "attribute": "Divine",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "383261a6-9add-4119-bec9-2c4c0617b688",
+        "category": "extras"
+    },
+    {
+        "ingredient": "Terracotta",
+        "attribute": "Mesmerizing",
+        "attributeOrder": {
+            "attribute": 0,
+            "ingredient": 0
+        },
+        "uuid": "d76faaa8-7335-40db-b668-0b7a63e6a197",
+        "category": "extras"
+    }
+]

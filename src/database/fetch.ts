@@ -17,12 +17,12 @@ export const getRandomMeals = async (): Promise<BasemealCard[]> => {
 }
 
 export const getRandomIngredients = async () => {
-    const beforeIngredientManager = new CardManager<IngredientCard>(new StaticCardCollection<IngredientCard>('Card_1'));
-    const afterIngredientManager = new CardManager<IngredientCard>(new StaticCardCollection<IngredientCard>('Card_2'));
+    const collection = new StaticCardCollection<IngredientCard>('ingredients');
+    const ingredientManager = new CardManager<IngredientCard>(collection);
 
     // do it in sets so we don't get the same ingredients
-    const set1 = await Promise.all([beforeIngredientManager.getIngredients(), afterIngredientManager.getIngredients()]);
-    const set2 = await Promise.all([beforeIngredientManager.getIngredients(), afterIngredientManager.getIngredients()]);
+    const set1 = await Promise.all([ingredientManager.getIngredients(), ingredientManager.getIngredients()]);
+    const set2 = await Promise.all([ingredientManager.getIngredients(), ingredientManager.getIngredients()]);
 
     return [
       set1,

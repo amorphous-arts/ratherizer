@@ -1,282 +1,347 @@
-{
-    "stuffed": [
-        {
-            "descriptor": "Wellington",
-            "uuid": "212d4c15-2364-4b84-9965-27741ff6e26f"
-        },
-        {
-            "descriptor": "Ravioli",
-            "uuid": "edde354d-19f2-4d9b-8cd1-ce308cdd5d88"
-        },
-        {
-            "descriptor": "Dumplings",
-            "uuid": "8f5b6841-f077-40ed-ac55-586d42712ab8"
-        },
-        {
-            "descriptor": "Hot Dog",
-            "uuid": "ba48de07-cb95-481b-844f-2056cc92df5f"
-        },
-        {
-            "descriptor": "Calzone",
-            "uuid": "bbaf14ac-7c62-46a4-a3d9-6fac73f30017"
-        },
-        {
-            "descriptor": "Empanadas",
-            "uuid": "ef729b97-6225-4ef1-a387-9ac78d89513e"
-        },
-        {
-            "descriptor": "Spanikopita",
-            "uuid": "d16c9c8c-1b8d-493d-ac1a-c3e916ca607e"
-        },
-        {
-            "descriptor": "Enchiladas",
-            "uuid": "af183c52-4176-40ce-91c4-f57751ef9ce5"
-        },
-        {
-            "descriptor": "Spring Rolls",
-            "uuid": "80bfa6f6-16da-4da8-8da4-77fc204c6e86"
-        },
-        {
-            "descriptor": "Gyro",
-            "uuid": "66ec29d1-332a-4b68-8257-498cc0489621"
-        },
-        {
-            "descriptor": "Souvlaki",
-            "uuid": "292fa6c2-3b62-4ccb-bccd-19bc1bef8140"
-        },
-        {
-            "descriptor": "Croquettes",
-            "uuid": "1214ec33-e019-43ec-80ff-6e9e674c40ba"
-        },
-        {
-            "descriptor": "Burrito",
-            "uuid": "e33afba0-4464-4fe8-b679-f7b666dc1f52"
-        },
-        {
-            "descriptor": "Falafel",
-            "uuid": "1a70ed02-7fce-4262-a066-4dad074ace16"
-        },
-        {
-            "descriptor": "Haggis",
-            "uuid": "0677b571-679e-412a-a674-1cec6a9f2027"
-        },
-        {
-            "descriptor": "Peking Duck",
-            "uuid": "b0806933-0369-4c42-b00a-60491cf9701b"
-        },
-        {
-            "descriptor": "Stuffed Shells",
-            "uuid": "754717a1-85b0-479e-9888-c5a82f76fe4d"
-        },
-        {
-            "descriptor": "Beaver Tail",
-            "uuid": "ecfbf5b2-dd39-4b6e-a6a7-38c59612f981"
-        },
-        {
-            "descriptor": "Fermented Shark",
-            "uuid": "90694812-b5d8-4fd2-a0b3-fbdbf5b262de"
-        }
-    ],
-    "not_stuffed": [
-        {
-            "descriptor": "Top Ramen",
-            "uuid": "86b132fd-ce6a-4aed-a2ba-68d11d3d589c"
-        },
-        {
-            "descriptor": "Rotisserie",
-            "uuid": "f835419d-e78a-4c96-8600-e0b8041f2ff6"
-        },
-        {
-            "descriptor": "Salad",
-            "uuid": "6e7e9374-43a2-407f-a6ce-ffcd52ed5d28"
-        },
-        {
-            "descriptor": "Shepard's Pie",
-            "uuid": "18b8b126-eef7-4b73-b213-0fd157fd34f8"
-        },
-        {
-            "descriptor": "Souffle",
-            "uuid": "c8d631f5-aecb-4a0b-a4ff-323272280312"
-        },
-        {
-            "descriptor": "Soup",
-            "uuid": "e89965d1-f372-4197-9899-02691d4f29b2"
-        },
-        {
-            "descriptor": "Steak",
-            "uuid": "168f64d2-ee7e-4a59-99a5-4b4f0a180681"
-        },
-        {
-            "descriptor": "Stew",
-            "uuid": "65bcfdd1-9866-45bc-9dbd-7c961a2df007"
-        },
-        {
-            "descriptor": "Stir Fry",
-            "uuid": "5a110884-1b58-4886-88eb-326076491c27"
-        },
-        {
-            "descriptor": "Stuffing",
-            "uuid": "3741538e-2c61-4d93-b7b9-11e9b7f3ec91"
-        },
-        {
-            "descriptor": "Sushi",
-            "uuid": "4b285b55-928d-4af3-8593-101578ea1f52"
-        },
-        {
-            "descriptor": "Tacos",
-            "uuid": "c4bdbea0-ae05-44c3-900d-07844cc1a406"
-        },
-        {
-            "descriptor": "Curry",
-            "uuid": "3bf18c30-edbb-4f86-b406-0377e9451dc4"
-        },
-        {
-            "descriptor": "Pho",
-            "uuid": "1703a394-eec6-433e-a0a0-f209d21f6af4"
-        },
-        {
-            "descriptor": "Pizza",
-            "uuid": "ac330bec-1131-45ff-a004-40145e21485e"
-        },
-        {
-            "descriptor": "Pudding",
-            "uuid": "085026e3-c5be-452e-bcda-aa665331e370"
-        },
-        {
-            "descriptor": "Quiche",
-            "uuid": "1702173b-3d30-404d-b690-c497471513fd"
-        },
-        {
-            "descriptor": "Filet",
-            "uuid": "1993ad6f-cc13-4821-b662-c2344fdb34de"
-        },
-        {
-            "descriptor": "Ice Cream",
-            "uuid": "b818b648-47eb-4ea9-b81b-ddf33dac674f"
-        },
-        {
-            "descriptor": "Lasagne",
-            "uuid": "d5a0fe93-fd56-4acb-b0ce-293eeafa89c2"
-        },
-        {
-            "descriptor": "Parfait",
-            "uuid": "b7eed744-d99d-4000-929a-67a580daeec8"
-        },
-        {
-            "descriptor": "Pie",
-            "uuid": "b5e2a80c-f060-4e12-b3f6-b14afcaba2bf"
-        },
-        {
-            "descriptor": "Aspic",
-            "uuid": "9a9d0ebc-eb9b-4ae9-84fd-f0144d11cd11"
-        },
-        {
-            "descriptor": "Burger",
-            "uuid": "8d342778-74d9-49d5-b128-e2c8e8545d58"
-        },
-        {
-            "descriptor": "Cake",
-            "uuid": "a2a6bce0-0c6d-497a-8396-13339720b179"
-        },
-        {
-            "descriptor": "Casserole",
-            "uuid": "4abcd1f9-be48-4afb-a021-450afccdc648"
-        },
-        {
-            "descriptor": "Chili",
-            "uuid": "1f020278-c57d-4ee1-81aa-c91740810c5a"
-        },
-        {
-            "descriptor": "Club Sandwich",
-            "uuid": "48f184f2-8da7-459f-835b-f3c1b3eccbb2"
-        },
-        {
-            "descriptor": "Goulash",
-            "uuid": "2974416a-397a-454f-be57-d653ffb3ac94"
-        },
-        {
-            "descriptor": "Shish Kebab",
-            "uuid": "ddf32c5a-d926-421c-9320-7c6ca960beff"
-        },
-        {
-            "descriptor": "Century Egg",
-            "uuid": "dd7f14c9-f0da-4e42-907c-7bbe8aaaf978"
-        },
-        {
-            "descriptor": "Gelato",
-            "uuid": "026eec78-d912-4d3b-9fec-f0ef8d41c255"
-        },
-        {
-            "descriptor": "Pad Thai",
-            "uuid": "4e33030f-eab9-4a47-9e69-33b41ab8f2b0"
-        },
-        {
-            "descriptor": "Tres Leches",
-            "uuid": "a52f3ea7-baf6-4491-9a4f-01630231ac2e"
-        },
-        {
-            "descriptor": "Fajitas",
-            "uuid": "5404f590-9f5a-4486-b3b1-ad7ac7e520db"
-        },
-        {
-            "descriptor": "Couscous",
-            "uuid": "8680ad7f-7a56-4abc-b4f6-f780524ef4e3"
-        },
-        {
-            "descriptor": "Matzoh Ball Soup",
-            "uuid": "68f5ca28-1249-455f-8c77-94bf8aab9047"
-        },
-        {
-            "descriptor": "Poutine",
-            "uuid": "33af7875-16de-45e3-a107-b51d49c6c47b"
-        },
-        {
-            "descriptor": "Borscht",
-            "uuid": "5e72f8c8-14bd-450b-8d0e-38a6be387e53"
-        },
-        {
-            "descriptor": "Laverbread",
-            "uuid": "e047aa54-c433-49f2-8a3d-ca81d7c0c6f0"
-        },
-        {
-            "descriptor": "Waffles",
-            "uuid": "dcc2681b-6e62-4e95-b108-2fca513fe51d"
-        },
-        {
-            "descriptor": "Frikadeller",
-            "uuid": "db4155d7-9f74-428a-9424-0a04eba9b3a4"
-        },
-        {
-            "descriptor": "Sausages",
-            "uuid": "7cb24000-d337-4b84-8554-0bb8f60a91a1"
-        },
-        {
-            "descriptor": "Bibimbap",
-            "uuid": "e3d2d3ee-6e1f-4be1-ae12-5773598c25c8"
-        },
-        {
-            "descriptor": "Bread",
-            "uuid": "9cf154fa-1272-41f5-8498-9ebaf1fb648c"
-        },
-        {
-            "descriptor": "Nachos",
-            "uuid": "c69510fe-ff60-4cce-bf97-39ce00f4ef7e"
-        },
-        {
-            "descriptor": "Croissants",
-            "uuid": "3fe7d624-84c9-461e-99cc-3450910a2e5e"
-        },
-        {
-            "descriptor": "Escargot",
-            "uuid": "5164c760-7f4c-421c-b560-3b27184ef421"
-        },
-        {
-            "descriptor": "Frog's Legs",
-            "uuid": "5b517f1a-b598-4ec4-b1e9-ce2140a1425b"
-        },
-        {
-            "descriptor": "Paella",
-            "uuid": "f9fa8c25-d7a1-42a2-bace-241d961d6d13"
-        }
-    ]
-}
+[
+    {
+        "descriptor": "Wellington",
+        "uuid": "212d4c15-2364-4b84-9965-27741ff6e26f",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Ravioli",
+        "uuid": "edde354d-19f2-4d9b-8cd1-ce308cdd5d88",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Dumplings",
+        "uuid": "8f5b6841-f077-40ed-ac55-586d42712ab8",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Hot Dog",
+        "uuid": "ba48de07-cb95-481b-844f-2056cc92df5f",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Calzone",
+        "uuid": "bbaf14ac-7c62-46a4-a3d9-6fac73f30017",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Empanadas",
+        "uuid": "ef729b97-6225-4ef1-a387-9ac78d89513e",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Spanikopita",
+        "uuid": "d16c9c8c-1b8d-493d-ac1a-c3e916ca607e",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Enchiladas",
+        "uuid": "af183c52-4176-40ce-91c4-f57751ef9ce5",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Spring Rolls",
+        "uuid": "80bfa6f6-16da-4da8-8da4-77fc204c6e86",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Gyro",
+        "uuid": "66ec29d1-332a-4b68-8257-498cc0489621",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Souvlaki",
+        "uuid": "292fa6c2-3b62-4ccb-bccd-19bc1bef8140",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Croquettes",
+        "uuid": "1214ec33-e019-43ec-80ff-6e9e674c40ba",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Burrito",
+        "uuid": "e33afba0-4464-4fe8-b679-f7b666dc1f52",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Falafel",
+        "uuid": "1a70ed02-7fce-4262-a066-4dad074ace16",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Haggis",
+        "uuid": "0677b571-679e-412a-a674-1cec6a9f2027",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Peking Duck",
+        "uuid": "b0806933-0369-4c42-b00a-60491cf9701b",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Stuffed Shells",
+        "uuid": "754717a1-85b0-479e-9888-c5a82f76fe4d",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Beaver Tail",
+        "uuid": "ecfbf5b2-dd39-4b6e-a6a7-38c59612f981",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Fermented Shark",
+        "uuid": "90694812-b5d8-4fd2-a0b3-fbdbf5b262de",
+        "category": "stuffed"
+    },
+    {
+        "descriptor": "Top Ramen",
+        "uuid": "86b132fd-ce6a-4aed-a2ba-68d11d3d589c",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Rotisserie",
+        "uuid": "f835419d-e78a-4c96-8600-e0b8041f2ff6",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Salad",
+        "uuid": "6e7e9374-43a2-407f-a6ce-ffcd52ed5d28",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Shepard's Pie",
+        "uuid": "18b8b126-eef7-4b73-b213-0fd157fd34f8",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Souffle",
+        "uuid": "c8d631f5-aecb-4a0b-a4ff-323272280312",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Soup",
+        "uuid": "e89965d1-f372-4197-9899-02691d4f29b2",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Steak",
+        "uuid": "168f64d2-ee7e-4a59-99a5-4b4f0a180681",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Stew",
+        "uuid": "65bcfdd1-9866-45bc-9dbd-7c961a2df007",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Stir Fry",
+        "uuid": "5a110884-1b58-4886-88eb-326076491c27",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Stuffing",
+        "uuid": "3741538e-2c61-4d93-b7b9-11e9b7f3ec91",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Sushi",
+        "uuid": "4b285b55-928d-4af3-8593-101578ea1f52",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Tacos",
+        "uuid": "c4bdbea0-ae05-44c3-900d-07844cc1a406",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Curry",
+        "uuid": "3bf18c30-edbb-4f86-b406-0377e9451dc4",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Pho",
+        "uuid": "1703a394-eec6-433e-a0a0-f209d21f6af4",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Pizza",
+        "uuid": "ac330bec-1131-45ff-a004-40145e21485e",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Pudding",
+        "uuid": "085026e3-c5be-452e-bcda-aa665331e370",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Quiche",
+        "uuid": "1702173b-3d30-404d-b690-c497471513fd",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Filet",
+        "uuid": "1993ad6f-cc13-4821-b662-c2344fdb34de",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Ice Cream",
+        "uuid": "b818b648-47eb-4ea9-b81b-ddf33dac674f",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Lasagne",
+        "uuid": "d5a0fe93-fd56-4acb-b0ce-293eeafa89c2",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Parfait",
+        "uuid": "b7eed744-d99d-4000-929a-67a580daeec8",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Pie",
+        "uuid": "b5e2a80c-f060-4e12-b3f6-b14afcaba2bf",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Aspic",
+        "uuid": "9a9d0ebc-eb9b-4ae9-84fd-f0144d11cd11",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Burger",
+        "uuid": "8d342778-74d9-49d5-b128-e2c8e8545d58",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Cake",
+        "uuid": "a2a6bce0-0c6d-497a-8396-13339720b179",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Casserole",
+        "uuid": "4abcd1f9-be48-4afb-a021-450afccdc648",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Chili",
+        "uuid": "1f020278-c57d-4ee1-81aa-c91740810c5a",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Club Sandwich",
+        "uuid": "48f184f2-8da7-459f-835b-f3c1b3eccbb2",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Goulash",
+        "uuid": "2974416a-397a-454f-be57-d653ffb3ac94",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Shish Kebab",
+        "uuid": "ddf32c5a-d926-421c-9320-7c6ca960beff",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Century Egg",
+        "uuid": "dd7f14c9-f0da-4e42-907c-7bbe8aaaf978",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Gelato",
+        "uuid": "026eec78-d912-4d3b-9fec-f0ef8d41c255",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Pad Thai",
+        "uuid": "4e33030f-eab9-4a47-9e69-33b41ab8f2b0",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Tres Leches",
+        "uuid": "a52f3ea7-baf6-4491-9a4f-01630231ac2e",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Fajitas",
+        "uuid": "5404f590-9f5a-4486-b3b1-ad7ac7e520db",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Couscous",
+        "uuid": "8680ad7f-7a56-4abc-b4f6-f780524ef4e3",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Matzoh Ball Soup",
+        "uuid": "68f5ca28-1249-455f-8c77-94bf8aab9047",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Poutine",
+        "uuid": "33af7875-16de-45e3-a107-b51d49c6c47b",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Borscht",
+        "uuid": "5e72f8c8-14bd-450b-8d0e-38a6be387e53",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Laverbread",
+        "uuid": "e047aa54-c433-49f2-8a3d-ca81d7c0c6f0",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Waffles",
+        "uuid": "dcc2681b-6e62-4e95-b108-2fca513fe51d",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Frikadeller",
+        "uuid": "db4155d7-9f74-428a-9424-0a04eba9b3a4",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Sausages",
+        "uuid": "7cb24000-d337-4b84-8554-0bb8f60a91a1",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Bibimbap",
+        "uuid": "e3d2d3ee-6e1f-4be1-ae12-5773598c25c8",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Bread",
+        "uuid": "9cf154fa-1272-41f5-8498-9ebaf1fb648c",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Nachos",
+        "uuid": "c69510fe-ff60-4cce-bf97-39ce00f4ef7e",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Croissants",
+        "uuid": "3fe7d624-84c9-461e-99cc-3450910a2e5e",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Escargot",
+        "uuid": "5164c760-7f4c-421c-b560-3b27184ef421",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Frog's Legs",
+        "uuid": "5b517f1a-b598-4ec4-b1e9-ce2140a1425b",
+        "category": "not_stuffed"
+    },
+    {
+        "descriptor": "Paella",
+        "uuid": "f9fa8c25-d7a1-42a2-bace-241d961d6d13",
+        "category": "not_stuffed"
+    }
+]
