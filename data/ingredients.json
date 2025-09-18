@@ -1663,7 +1663,7 @@
         "ingredient": "Construction Paper",
         "attribute": "Of Various Colors",
         "attributeOrder": {
-            "attribute": 0,
+            "attribute": 1,
             "ingredient": 0
         },
         "uuid": "c42af547-a7b4-4bdb-87a3-4799738a33b1",
