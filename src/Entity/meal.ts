@@ -11,7 +11,7 @@ const afterToken = {
 export class Meal {
   get secondContextToken(): string
   {
-    return afterToken[this.sides[0].category] ?? ''
+    return 'topped with';
   }
 
   get firstContextToken(): string
