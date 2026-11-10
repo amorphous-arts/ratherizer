@@ -44,6 +44,11 @@ $primary: #9d4384;
     gap: 1rem;
     height: 100%;
 
+    // Phones in landscape / small tablets: use the full width so the 5 cards fit
+    @media (min-width: 577px) and (max-width: 1200px) {
+      width: 100%;
+    }
+
     &#meal-2-container {
       @media (min-width: 768px) {
         flex-direction: column-reverse;
@@ -72,22 +77,69 @@ $primary: #9d4384;
         margin: auto;
       }
 
+      // The sentence under the cards: plain centered text, one normal space
+      // between words. Empty pieces (a missing "and" / "stuffed") are hidden
+      // so they don't leave gaps.
       &.meal-string {
         text-shadow: 0 0 11px rgba(0, 0, 0, 0.8);
         text-align: center;
         color: white;
-        justify-content: space-evenly;
-
-        @media (max-width: 768px) {
-          display: block;
-          text-align: center;
-        }
+        display: block;
 
         & > span {
-          flex: 1 1 0;
+          display: inline;
 
-          &:nth-child(even) {
-            flex: .34 .34 0;
+          &:empty {
+            display: none;
+          }
+        }
+      }
+
+      // Phones in landscape and small tablets: keep all 5 cards on one line
+      // by letting them shrink (and the text/tokens shrink with them).
+      @media (min-width: 577px) and (max-width: 1200px) {
+        &:not(.meal-string) {
+          column-gap: .4em;
+          flex-wrap: nowrap;
+          font-size: clamp(.55rem, 1.45vw, .9rem);
+
+          .context-token-container:empty {
+            display: none;
+          }
+
+          .ingredient-container {
+            flex: 0 1 9em;
+            min-width: 0;
+          }
+
+          .card {
+            box-sizing: border-box;
+            width: 100%;
+
+            * {
+              box-sizing: border-box;
+            }
+          }
+
+          // smallest landscape screens: slightly smaller card headings
+          @media (max-width: 900px) {
+            .card h3 {
+              font-size: 1em;
+              letter-spacing: .04em;
+              padding: 3px 0;
+            }
+          }
+
+          .context-token {
+            box-sizing: border-box;
+            height: 3.6em;
+            padding: .2em;
+            width: 3.6em;
+
+            span {
+              font-size: .72em;
+              line-height: 1.15;
+            }
           }
         }
       }
