@@ -92,7 +92,7 @@ function clickPlayAgain(): void {
 }
 
 function share() {
-  const mealText = [...document.querySelectorAll('.meal-container:not(.hide) .meal-string *')].map(x => x.innerText).join(' ').replace(/\s+/, ' ')
+  const mealText = [...document.querySelectorAll('.meal-container:not(.hide) .meal-string *')].map(x => x.innerText.trim()).filter(Boolean).join(' ')
 
   // determine if the user is on mobile
 
