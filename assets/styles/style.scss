@@ -68,7 +68,7 @@ $primary: #9d4384;
         flex-direction: column;
         row-gap: 1.5rem;
 
-        .context-token-container:empty {
+        .slot-empty {
           display: none;
         }
       }
@@ -77,22 +77,31 @@ $primary: #9d4384;
         margin: auto;
       }
 
-      // The sentence under the cards: plain centered text, one normal space
-      // between words. Empty pieces (a missing "and" / "stuffed") are hidden
-      // so they don't leave gaps.
-      &.meal-string {
-        text-shadow: 0 0 11px rgba(0, 0, 0, 0.8);
-        text-align: center;
-        color: white;
-        display: block;
-
-        & > span {
-          display: inline;
-
-          &:empty {
-            display: none;
-          }
+      // Side by side: cards line up along the top; circles sit in the middle.
+      @media (min-width: 577px) {
+        & > .slot {
+          align-self: flex-start;
+          margin: 0 auto;
         }
+
+        & > .slot-token {
+          align-self: stretch;
+          justify-content: center;
+        }
+      }
+
+      // The full sentence is kept for sharing and screen readers, but it is
+      // visually hidden: each word is shown under its own card/circle instead.
+      &.meal-string {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
       }
 
       // Phones in landscape and small tablets: keep all 5 cards on one line
@@ -103,13 +112,17 @@ $primary: #9d4384;
           flex-wrap: nowrap;
           font-size: clamp(.55rem, 1.45vw, .9rem);
 
-          .context-token-container:empty {
+          .slot-empty {
             display: none;
           }
 
-          .ingredient-container {
+          .slot-card {
             flex: 0 1 9em;
             min-width: 0;
+
+            .ingredient-container {
+              width: 100%;
+            }
           }
 
           .card {
@@ -132,19 +145,19 @@ $primary: #9d4384;
 
           .context-token {
             box-sizing: border-box;
-            height: 3.6em;
+            height: max(3.6em, 44px);
             padding: .2em;
-            width: 3.6em;
+            width: max(3.6em, 44px);
 
             span {
-              font-size: .72em;
+              font-size: max(10px, .72em); // never smaller than 10px
               line-height: 1.15;
             }
           }
         }
       }
 
-      .context-token-container:empty {
+      .slot-empty {
         width: 62px;
 
         @media (max-width: 768px) {
@@ -159,7 +172,7 @@ $primary: #9d4384;
     border-radius: 3px;
     border-style: solid;
     border-width: 7px;
-    padding: 10px 0;
+    padding: 6px 0;
     text-align: center;
     transition: 0.5s;
     width: 11em;
@@ -172,8 +185,9 @@ $primary: #9d4384;
       color: #e0dbd2;
       font-size: 1.125em;
       font-weight: 600;
+      line-height: 1.2;
       margin: 0;
-      padding: 5px;
+      padding: 3px;
       text-transform: capitalize;
     }
   }
@@ -193,6 +207,19 @@ $primary: #9d4384;
 
   .content.card-item p {
     font-size: 1em;
+    line-height: 1.15;
+    margin: 0;
+    overflow-wrap: break-word;
+    padding: 0 .3em;
+  }
+
+  .attr-data, .ing-data, .base-data {
+    flex: 1 1 0;
+    min-height: 0;
+  }
+
+  .card-item.heading {
+    flex: none;
   }
 
   .card, .attr-data, .ing-data, .base-data {
@@ -212,9 +239,13 @@ $primary: #9d4384;
     }
   }
 
+  // Every card is a poker-card shape (5:7). The text boxes share the space
+  // equally; long text is shrunk to fit by src/util/fit-text.ts.
   .ing-card .card-item.content {
+    flex: 1 1 0;
+    min-height: 0;
+    overflow: hidden;
     width: 100%;
-    aspect-ratio: 79 / 42;
   }
 
   .rotate {
@@ -226,7 +257,8 @@ $primary: #9d4384;
     position: relative;
     transform-style: preserve-3d;
     transition: .5s;
-    aspect-ratio: 182 / 283;
+    aspect-ratio: 5 / 7;
+    display: flex;
 
     &:hover > .card {
       border-color: $primary;
@@ -281,12 +313,36 @@ $primary: #9d4384;
     }
   }
 
-  .base-card {
-    max-height: 250px;
+  // A card or circle plus its descriptor centered underneath.
+  .slot {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 
+  .caption {
+    color: white;
+    font-size: clamp(13px, 1.9vw, 16px);
+    line-height: 1.15;
+    margin-top: .4em;
+    min-width: calc(100% + .6em); // as wide as the card (a hair wider), but never makes the card wider
+    overflow-wrap: anywhere;
+    text-align: center;
+    text-shadow: 0 0 11px rgba(0, 0, 0, 0.8);
+    width: 0;
+  }
+
+  // circle captions may be a touch wider than the circle itself
+  .slot-token .caption {
+    min-width: calc(100% + 1.2em);
+  }
+
+  .base-card {
     .card-item.content {
+      flex: 1 1 0;
+      min-height: 0;
+      overflow: hidden;
       width: 100%;
-      aspect-ratio: 158 / 207;
     }
   }
 
